@@ -862,11 +862,22 @@ function createListingRow(job, isToday){
         <div class="listing-meta">
           ${job.type} • Posted: ${formatDate(job.postedDate)}
         </div>
+
+        ${job.description ? `
+          <button class="job-toggle-btn">➕ View Details</button>
+          <div class="job-details" style="display:none;">
+            <p>${job.description}</p>
+          </div>
+        ` : ""}
       </div>
-      <a class="apply-btn" href="${job.link}" target="_blank" rel="noopener noreferrer">Apply Here</a>
+
+      <a class="apply-btn" href="${job.link}" target="_blank" rel="noopener noreferrer">
+        Apply Here
+      </a>
     </div>
   `;
 }
+
 
 function renderCategoryJobs(){
   const openJobs = jobs.filter(job => job.status === "open");
