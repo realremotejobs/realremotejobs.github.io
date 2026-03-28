@@ -1003,16 +1003,19 @@ function renderCategoryJobs(){
   categoryGroupsContainer.innerHTML = cards;
 }
 
-function toggleSection(id, button){
-  const section = document.getElementById(id);
-  const isOpen = section.classList.contains("show");
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("job-toggle-btn")) {
+    const details = e.target.nextElementSibling;
 
-  if(isOpen){
-    section.classList.remove("show");
-    button.textContent = button.textContent.replace("▲", "▼");
-  } else {
-    section.classList.add("show");
-    button.textContent = button.textContent.replace("▼", "▲");
+    if (details.style.display === "none") {
+      details.style.display = "block";
+      e.target.textContent = "▲ Hide Details";
+    } else {
+      details.style.display = "none";
+      e.target.textContent = "➕ View Details";
+    }
+  }
+});
   }
 }
 
