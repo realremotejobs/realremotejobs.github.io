@@ -374,6 +374,32 @@ font-size:14px;
 color:#173B72;
 justify-self:end;
 white-space:nowrap;
+}footer{
+  background:#E9F0F8;
+  padding:8px 20px;
+  border-top:1px solid rgba(23,59,114,.08);
+}
+
+.footer-wrap{
+  max-width:760px;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:160px;
+}
+
+.footer-banner{
+  width:260px;
+  height:auto;
+  display:block;
+}
+
+.copyright{
+  margin:0;
+  font-size:13px;
+  color:#173B72;
+  white-space:nowrap;
 }
   
 @media (max-width:1000px){
@@ -504,11 +530,12 @@ white-space:nowrap;
 
 </main>
 
-<footer c<footer>
-  <img src="images/footer-banner.png" class="footer-banner" alt="">
-  <p class="copyright">© 2026 Remote Life With Littles</p>
+<footer>
+  <div class="footer-wrap">
+    <img src="images/footer-banner.png" class="footer-banner" alt="Made for parents chasing flexibility and freedom">
+    <p class="copyright">© 2026 Remote Life With Littles</p>
+  </div>
 </footer>
-
 <script>
 /* ============================================
    ONLY UPDATE THE JOB LIST BELOW
