@@ -296,8 +296,36 @@ footer{
 <div class="container">
 
   <h2 class="section-title">Open Remote Jobs</h2>
-  <div id="categoryGroups" class="group-grid"></div>
+ <h2 class="section-title">Open Remote Jobs</h2>
 
+<div class="filter-bar">
+
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+  </select>
+
+  <select id="typeFilter">
+    <option value="all">All Job Types</option>
+    <option value="Full-Time">Full-Time</option>
+    <option value="Part-Time">Part-Time</option>
+    <option value="Contract">Contract</option>
+    <option value="Freelance">Freelance</option>
+  </select>
+
+  <select id="locationFilter">
+    <option value="all">All Locations</option>
+    <option value="United States">United States</option>
+    <option value="Canada">Canada</option>
+    <option value="International">International</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Remote">Remote</option>
+  </select>
+
+  <input id="searchFilter" type="text" placeholder="Search title or company">
+
+</div>
+
+<div id="categoryGroups" class="group-grid"></div>
   <h2 class="section-title" style="margin-top:60px;">Resume Help</h2>
 
   <div class="templates">
