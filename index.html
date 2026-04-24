@@ -27,28 +27,26 @@ img{
   display:block;
 }
 
-
 header{
-background:#E9F0F8;
-padding:0;
-text-align:center;
-line-height:0;
+  background:#E9F0F8;
+  padding:0;
+  text-align:center;
+  line-height:0;
 }
 
 .header-logo{
-width:90%;
-max-width:1000px;
-height:auto;
-display:block;
-margin:auto;
+  width:90%;
+  max-width:1000px;
+  height:auto;
+  display:block;
+  margin:auto;
 }
+
 .container{
   max-width:1120px;
   margin:0 auto;
-  padding:28px 20px 18px;
+  padding:14px 20px 18px;
 }
-
-/* Shared cards */
 
 .promo-strip,
 .filter-card,
@@ -58,8 +56,6 @@ margin:auto;
   border-radius:16px;
   box-shadow:0 6px 18px rgba(74,111,165,0.10);
 }
-
-/* Promo strips */
 
 .promo-strip{
   padding:20px 24px;
@@ -129,26 +125,26 @@ margin:auto;
   background:#6da75b;
 }
 
-/* Filters */
-
 .filter-card{
-  padding:20px 22px;
-  margin-bottom:24px;
+  padding:22px;
+  margin-bottom:28px;
 }
 
 .filter-row{
   display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
+  grid-template-columns:240px 1fr 1fr 1.3fr;
+  gap:16px;
+  align-items:center;
 }
 
 .filter-label{
   display:flex;
-  justify-content:center;
   align-items:center;
   gap:12px;
-  font-size:28px;
-  text-align:center;
+  font-family:'Patrick Hand', cursive;
+  font-size:32px;
+  color:#173B72;
+  white-space:nowrap;
 }
 
 .filter-icon-img{
@@ -169,13 +165,17 @@ margin:auto;
   font-size:15px;
   padding:0 14px;
   font-family:'Inter', Arial, sans-serif;
+  transition:.2s ease;
+}
+
+.filter-row select:hover,
+.filter-row input:hover{
+  border-color:#4A6FA5;
 }
 
 .filter-row input::placeholder{
   color:#51657e;
 }
-
-/* Category grid/cards */
 
 .group-grid{
   display:grid;
@@ -337,42 +337,11 @@ margin:auto;
   font-weight:600;
 }
 
-/* Free template */
-
 .template-strip{
   margin-top:24px;
 }
 
 footer{
-background:#E9F0F8;
-padding:14px 24px;
-border-top:1px solid rgba(23,59,114,.08);
-}
-
-.footer-wrap{
-max-width:1100px;
-margin:0 auto;
-display:grid;
-grid-template-columns:1fr auto;
-align-items:center;
-gap:30px;
-}
-
-.footer-banner{
-width:100%;
-max-width:420px;
-height:auto;
-display:block;
-justify-self:start;
-}
-
-.copyright{
-margin:0;
-font-size:14px;
-color:#173B72;
-justify-self:end;
-white-space:nowrap;
-}footer{
   background:#E9F0F8;
   padding:8px 20px;
   border-top:1px solid rgba(23,59,114,.08);
@@ -399,7 +368,7 @@ white-space:nowrap;
   color:#173B72;
   white-space:nowrap;
 }
-  
+
 @media (max-width:1000px){
   .group-grid{
     grid-template-columns:repeat(2, 1fr);
@@ -411,19 +380,18 @@ white-space:nowrap;
 
   .filter-label{
     grid-column:1 / -1;
+    justify-content:flex-start;
   }
 
+  #searchFilter{
+    grid-column:1 / -1;
+  }
+}
 
 @media (max-width:700px){
-  .site-header{
-    padding:12px 10px;
+  .container{
+    padding:14px 14px 14px;
   }
-
- .container{
-  max-width:1120px;
-  margin:0 auto;
-  padding:14px 20px 18px;
-}
 
   .promo-strip{
     flex-direction:column;
@@ -444,30 +412,32 @@ white-space:nowrap;
     width:100%;
   }
 
- .filter-row{
-  display:grid;
-  grid-template-columns:300px 1fr 1fr 1.45fr;
-  gap:16px;
-  align-items:center;
-.filter-label{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  font-family:'Patrick Hand', cursive;
-  font-size:30px;
-  color:#173B72;
-  white-space:nowrap;
-  text-align:center;
+  .filter-row{
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+  }
+
+ .filter-label{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:16px;
+font-family:'Patrick Hand', cursive;
+font-size:32px;
+color:#173B72;
+white-space:nowrap;
+padding:0 10px;
+text-align:center;
 }
 
-/* ICON SIZE */
-.filter-icon-img{
-  width:52px;
-  height:52px;
-  object-fit:contain;
-  flex-shrink:0;
-}
+  .filter-icon-img{
+    width:52px;
+    height:52px;
+  }
+
+  #searchFilter{
+    grid-column:1 / -1;
+  }
 
   .group-grid{
     grid-template-columns:1fr;
@@ -480,7 +450,17 @@ white-space:nowrap;
   .category-card h3{
     font-size:28px;
   }
+
+  .footer-wrap{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .footer-banner{
+    width:240px;
+  }
 }
+
 </style>
 </head>
 
