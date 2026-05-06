@@ -96,39 +96,41 @@ header{
   font-size:16px;
 }
 
+/* PROMO BUTTON */
 .promo-btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  background:#4A6FA5;
-  color:#FFFFFF !important;
-  text-decoration:none;
-  padding:14px 24px;
-  border-radius:10px;
-  font-weight:800;
-  font-size:18px;
-  min-width:170px;
-  white-space:nowrap;
-  border:1px solid #3d6296;
-  transition:.2s ease;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+background:#4A6FA5;
+color:#FFFFFF !important;
+text-decoration:none;
+padding:14px 24px;
+border-radius:10px;
+font-weight:800;
+font-size:18px;
+min-width:170px;
+white-space:nowrap;
+border:1px solid #3d6296;
+transition:.2s ease;
 }
 
 .promo-btn:hover{
-  background:#3f6294;
-  color:#FFFFFF !important;
-  text-decoration:none;
-  transform:translateY(-1px);
+background:#3f6294;
+color:#FFFFFF !important;
+text-decoration:none;
+transform:translateY(-1px);
 }
 
+/* FREE TEMPLATE GREEN BUTTON */
 .download-btn{
-  background:#7FB069;
-  border-color:#6da75b;
+background:#7FB069;
+border-color:#6da75b;
 }
 
 .download-btn:hover{
-  background:#6da75b;
-  color:#FFFFFF !important;
+background:#6da75b;
+color:#FFFFFF !important;
 }
 
 .filter-card{
@@ -204,6 +206,18 @@ header{
   flex-grow:1;
 }
 
+.view-listings-btn{
+  margin-top:auto;
+};
+}
+
+.category-heading{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:16px;
+}
+
 .category-icon-img{
   width:78px;
   height:78px;
@@ -241,7 +255,6 @@ header{
   align-items:center;
   justify-content:space-between;
   gap:10px;
-  margin-top:auto;
 }
 
 .view-listings-btn:hover{
@@ -413,7 +426,7 @@ footer{
   .promo-left{
     flex-direction:column;
   }
-
+o
   .promo-text h2,
   .promo-text h3{
     font-size:28px;
@@ -428,18 +441,18 @@ footer{
     gap:12px;
   }
 
-  .filter-label{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:16px;
-    font-family:'Patrick Hand', cursive;
-    font-size:32px;
-    color:#173B72;
-    white-space:nowrap;
-    padding:0 10px;
-    text-align:center;
-  }
+ .filter-label{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:16px;
+font-family:'Patrick Hand', cursive;
+font-size:32px;
+color:#173B72;
+white-space:nowrap;
+padding:0 10px;
+text-align:center;
+}
 
   .filter-icon-img{
     width:52px;
@@ -471,6 +484,7 @@ footer{
     width:240px;
   }
 }
+
 </style>
 </head>
 
@@ -491,7 +505,7 @@ footer{
       </div>
     </div>
 
-    <a href="resume-help.html" class="promo-btn">Resume Help →</a>
+   <a href="resume-help.html" class="promo-btn">Resume Help →</a>
   </section>
 
   <section class="filter-card" aria-label="Job filters">
@@ -505,27 +519,31 @@ footer{
         <option value="all">All Categories</option>
       </select>
 
-      <select id="locationFilter" aria-label="Filter by location">
-        <option value="all">All Locations</option>
-        <option value="United States">United States</option>
-        <option value="Canada">Canada</option>
-        <option value="Brazil">Brazil</option>
-        <option value="Estonia">Estonia</option>
-        <option value="India">India</option>
-        <option value="Hungary">Hungary</option>
-        <option value="Japan">Japan</option>
-        <option value="United Kingdom">United Kingdom</option>
-        <option value="London">London</option>
-        <option value="São Paulo">São Paulo</option>
-        <option value="Tallinn">Tallinn</option>
-        <option value="Hyderabad">Hyderabad</option>
-        <option value="Budapest">Budapest</option>
-        <option value="Tokyo">Tokyo</option>
-        <option value="Remote">Remote</option>
-        <option value="Hybrid">Hybrid</option>
-        <option value="International">International</option>
-        <option value="Worldwide">Worldwide</option>
-      </select>
+      <select id="locationFilter">
+<option value="all">All Locations</option>
+
+<option value="United States">United States</option>
+<option value="Canada">Canada</option>
+
+<option value="Brazil">Brazil</option>
+<option value="Estonia">Estonia</option>
+<option value="India">India</option>
+<option value="Hungary">Hungary</option>
+<option value="Japan">Japan</option>
+<option value="United Kingdom">United Kingdom</option>
+
+<option value="London">London</option>
+<option value="São Paulo">São Paulo</option>
+<option value="Tallinn">Tallinn</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Budapest">Budapest</option>
+<option value="Tokyo">Tokyo</option>
+
+<option value="Remote">Remote</option>
+<option value="Hybrid">Hybrid</option>
+
+<option value="International">International</option>
+</select>
 
       <input id="searchFilter" type="text" placeholder="Search title or company..." aria-label="Search title or company">
     </div>
@@ -555,43 +573,47 @@ footer{
     <p class="copyright">© 2026 Remote Life With Littles</p>
   </div>
 </footer>
-
 <script>
 /* ============================================
    ONLY UPDATE THE JOB LIST BELOW
    ============================================ */
 
 const jobs = [
+
+/* CUSTOMER SUPPORT JOBS */
   {
-    category: "Content & Education Jobs",
-    title: "Secondary Mathematics Curriculum Developer",
-    company: "Miaplaza",
-    type: "Full-Time • Fully Remote • Worldwide",
-    postedDate: "2026-05-06",
-    status: "Now Hiring",
-    description: "Create math curriculum, lesson plans, assessments, and educational content for middle and high school students. Great fit for teachers, homeschool educators, and curriculum creators with strong lesson planning and writing skills.",
-    link: "https://jobs.ashbyhq.com/miaplaza/b20084ea-ca78-477d-bb61-9f70deb06926"
-  },
-  {
-    category: "Content & Education Jobs",
-    title: "Secondary Science Curriculum Developer",
-    company: "Miaplaza",
-    type: "Full-Time • Fully Remote • Worldwide",
-    postedDate: "2026-05-06",
-    status: "Now Hiring",
-    description: "Develop engaging science curriculum, assessments, and educational materials for online students. Ideal for educators with teaching, online learning, or curriculum writing experience.",
-    link: "https://jobs.ashbyhq.com/miaplaza/30bad73f-cb50-4725-b989-630b70499243"
-  },
-  {
-    category: "Content & Education Jobs",
-    title: "Secondary Social Studies Curriculum Developer",
-    company: "Miaplaza",
-    type: "Full-Time • Fully Remote • Worldwide",
-    postedDate: "2026-05-06",
-    status: "Now Hiring",
-    description: "Design social studies curriculum, video scripts, lessons, and activities for grades 6-12. Strong fit for teachers, homeschool moms, tutors, and educational content creators.",
-    link: "https://jobs.ashbyhq.com/miaplaza/489ffb8b-7dc4-497a-b791-6726b77ac7b8"
-  },
+  category: "Content & Education Jobs",
+  title: "Secondary Mathematics Curriculum Developer",
+  company: "Miaplaza",
+  type: "Full-Time • Fully Remote • Worldwide",
+  postedDate: "2026-05-06",
+  status: "open",
+  description: "Create math curriculum, lesson plans, assessments, and educational content for middle and high school students. Great fit for teachers, homeschool educators, and curriculum creators with strong lesson planning and writing skills.",
+  link: "https://jobs.ashbyhq.com/miaplaza/b20084ea-ca78-477d-bb61-9f70deb06926"
+},
+
+{
+  category: "Content & Education Jobs",
+  title: "Secondary Science Curriculum Developer",
+  company: "Miaplaza",
+  type: "Full-Time • Fully Remote • Worldwide",
+  postedDate: "2026-05-06",
+  status: "open",
+  description: "Develop engaging science curriculum, assessments, and educational materials for online students. Ideal for educators with teaching, online learning, or curriculum writing experience.",
+  link: "https://jobs.ashbyhq.com/miaplaza/30bad73f-cb50-4725-b989-630b70499243"
+},
+
+{
+  category: "Content & Education Jobs",
+  title: "Secondary Social Studies Curriculum Developer",
+  company: "Miaplaza",
+  type: "Full-Time • Fully Remote • Worldwide",
+  postedDate: "2026-05-06",
+  status: "open",
+  description: "Design social studies curriculum, video scripts, lessons, and activities for grades 6-12. Strong fit for teachers, homeschool moms, tutors, and educational content creators.",
+  link: "https://jobs.ashbyhq.com/miaplaza/489ffb8b-7dc4-497a-b791-6726b77ac7b8"
+},
+
   {
     category: "Customer Support Jobs",
     title: "Customer Support Specialist (Bilingual)",
@@ -602,6 +624,7 @@ const jobs = [
     description: "Mudflap is hiring a remote Customer Support Specialist to assist truck drivers with fuel payments, account issues, and platform support. This is a fast-paced, phone-heavy role with some chat and ticket support. Ideal for candidates comfortable handling high call volume and multitasking across tools like Zendesk.",
     link: "https://www.mudflapinc.com/open-positions?ashby_jid=873cee44-07c2-4fdf-96c8-e63b3d9c9fa9"
   },
+
   {
     category: "Customer Support Jobs",
     title: "Energy Efficiency Customer Support Specialist",
@@ -612,6 +635,7 @@ const jobs = [
     description: "CLEAResult is hiring a remote support specialist to help utility customers with energy efficiency programs. This is a structured inbound call center role involving scheduling, enrollment, technical assistance, and customer education. Some chat and email support included.",
     link: "https://clearesult.wd1.myworkdayjobs.com/en-US/CLEAResult_External_Careers/job/Remote---Alabama/Remote-Energy-Efficiency-Customer-Support-Specialist_R0017154"
   },
+
   {
     category: "Technical & Operations Jobs",
     title: "Technical Support Specialist",
@@ -622,6 +646,7 @@ const jobs = [
     description: "PerfectServe is hiring a Technical Support Specialist to assist healthcare professionals with communication and scheduling software. Responsibilities include troubleshooting, user training, and system support across phone, chat, and ticket channels. Requires strong technical aptitude and flexibility for night or weekend shifts.",
     link: "https://job-boards.greenhouse.io/perfectserve/jobs/5984654004"
   },
+
   {
     category: "Customer Success Jobs",
     title: "Customer Success Manager",
@@ -633,124 +658,757 @@ const jobs = [
     link: "https://job-boards.greenhouse.io/gitlab/jobs/8419875002"
   },
   {
-    category: "Customer Support Jobs",
-    title: "Customer Care Representative, Amazon Health Services",
-    company: "Amazon / PillPack",
-    type: "Remote - Arizona, United States",
-    postedDate: "2026-04-27",
-    status: "open",
-    description: "Fully remote customer care role supporting Amazon Health Services customers by phone, email, and web. Responsibilities include billing and insurance verification, product/service questions, inbound and outbound calls, copay and shipping support, technical support for pharmacy.amazon.com, and maintaining customer privacy. Requires high school diploma or equivalent, 6+ months of computer/web-based tool experience, multitasking skills, and ability to pass a pre-employment drug test. Pay listed at $17–$21/hr.",
-    link: "https://amazon.jobs/en/jobs/3165802/customer-care-representative-amazon-health-services"
-  },
+  category: "Customer Support Jobs",
+  title: "Customer Care Representative, Amazon Health Services",
+  company: "Amazon / PillPack",
+  type: "Remote - Arizona, United States",
+  postedDate: "2026-04-27",
+  status: "open",
+  description: "Fully remote customer care role supporting Amazon Health Services customers by phone, email, and web. Responsibilities include billing and insurance verification, product/service questions, inbound and outbound calls, copay and shipping support, technical support for pharmacy.amazon.com, and maintaining customer privacy. Requires high school diploma or equivalent, 6+ months of computer/web-based tool experience, multitasking skills, and ability to pass a pre-employment drug test. Pay listed at $17–$21/hr.",
+  link: "https://amazon.jobs/en/jobs/3165802/customer-care-representative-amazon-health-services"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Specialist",
+  company: "SchooLinks",
+  type: "Remote - United States",
+  postedDate: "2026-04-27",
+  status: "open",
+  description: "Remote customer support role helping school district partners use the SchooLinks college and career readiness platform. Responsibilities include responding to chat and email support requests, meeting a 5-minute first response SLA for chat and 1-hour SLA for email, troubleshooting platform issues, answering data and configuration questions, escalating issues to product or engineering, and tracking conversations in tools like Intercom and Front. Requires 1–2 years of customer support or client-facing experience, strong communication skills, ability to manage multiple tickets, and a customer-first problem-solving mindset. Salary range listed at $55,000–$66,000.",
+  link: "https://apply.workable.com/schoolinks/j/241D376F18/"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Team Lead",
+  company: "Wise",
+  type: "Remote / Hybrid - São Paulo, Brazil",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "Lead the Business Customer Support Team, manage KPIs, coach agents, maintain SLAs, improve service quality, and partner cross-functionally. Requires English + Portuguese fluency and leadership experience in customer support.",
+  link: "https://wise.jobs/job/customer-support-team-lead-in-sao-paulo-jid-3392"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Area Lead",
+  company: "Wise",
+  type: "Hybrid / Remote - Tallinn, Estonia",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "Lead regional business support operations across multiple locations, manage Senior Leads, oversee KPIs, staffing, budgeting, compliance, and customer service performance. Requires large-team leadership experience and strong operations management skills.",
+  link: "https://wise.jobs/job/customer-support-area-lead-in-tallinn-jid-3361"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Specialist",
+  company: "Wise",
+  type: "Work from Office - Hyderabad, India",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "First point of contact supporting customers via phone, chat, and email. Resolve complex issues with empathy, meet KPIs, maintain accurate case records, and contribute to continuous improvement in a fast-paced global fintech environment.",
+  link: "https://wise.jobs/job/customer-support-specialist-in-hyderabad-jid-2766"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Site Lead",
+  company: "Wise",
+  type: "Hybrid / Remote - Budapest, Hungary",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "Senior leadership role overseeing Budapest customer support operations. Lead Senior Team Leads, manage KPIs, staffing, compliance, retention, and site strategy while scaling a high-performing support organization.",
+  link: "https://wise.jobs/job/customer-support-site-lead-in-budapest-jid-3099"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Associate (1 Year FTC)",
+  company: "Wise",
+  type: "Hybrid - Tokyo, Japan",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "Provide customer support via phone, chat, and email for Japanese and global customers. Resolve issues end-to-end, meet KPIs, and work in a fast-paced fintech environment. Requires native Japanese and intermediate English.",
+  link: "https://wise.jobs/job/customer-support-associate-1-year-ftc-in-tokyo-japan-jid-287"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Associate - Japanese Speaker",
+  company: "Wise",
+  type: "Hybrid - São Paulo, Brazil",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "Support Japanese, Portuguese, and English-speaking customers via phone, email, and chat. Resolve issues, improve processes, meet support metrics, and work in a fast-paced fintech environment. Requires Japanese, Portuguese, and English fluency.",
+  link: "https://wise.jobs/job/customer-support-associate-japanese-speaker-in-sao-paulo-jid-3149"
+},
+{
+  category: "Technical & Operations Jobs",
+  title: "Technical Support Specialist",
+  company: "Airtable",
+  type: "Remote - London, United Kingdom",
+  postedDate: "2026-04-24",
+  status: "open",
+  description: "Support enterprise customers by troubleshooting technical issues via email and video calls, escalating complex cases, documenting trends, improving knowledge base content, and helping customers optimize workflows. Experience with APIs, databases, and SaaS support preferred.",
+  link: "https://job-boards.greenhouse.io/airtable/jobs/8497826002"
+},
+  
+{
+  category: "Customer Success Jobs",
+  title: "Client Success Associate",
+  company: "INFUSE",
+  type: "Remote - United States",
+  postedDate: "2026-04-17",
+  status: "open",
+  description: "Entry-level client success role focused on client relationships, support, escalations, administrative tasks, and helping ensure successful delivery of services.",
+  link: "https://infuse.com/jobs/client-success-associate-entry-level-remote/"
+},
+{
+  category: "Customer Success Jobs",
+  title: "Junior Client Success Manager",
+  company: "Ylopo",
+  type: "Remote - United States",
+  postedDate: "2026-04-17",
+  status: "open",
+  description: "Entry-level/junior client success role providing client training, account reviews, retention support, Zoom meetings, and Salesforce documentation. Includes bonus potential.",
+  link: "https://job-boards.greenhouse.io/ylopo/jobs/5574006004"
+},
+{
+  category: "Customer Success Jobs",
+  title: "Customer Success Coordinator",
+  company: "Scholastic",
+  type: "Remote - Florida, United States",
+  postedDate: "2026-04-17",
+  status: "open",
+  description: "Customer success coordinator role handling scheduling, reports, PTO/payroll support, Salesforce tracking, calendars, and team administrative operations.",
+  link: "https://scholastic.wd5.myworkdayjobs.com/en-US/External/job/Florida---Remote/Customer-Success-Coordinator_R15342"
+},
+{
+  category: "No Phone Jobs",
+  title: "Data Entry Support Specialist",
+  company: "Ylopo",
+  type: "Remote - Philippines",
+  postedDate: "2026-04-17",
+  status: "open",
+  description: "International remote data entry role focused on onboarding/offboarding forms, updating websites and systems, email support, and backend administrative tasks.",
+  link: "https://job-boards.greenhouse.io/ylopo/jobs/5149363004"
+},
   {
-    category: "Customer Support Jobs",
-    title: "Customer Support Specialist",
-    company: "SchooLinks",
-    type: "Remote - United States",
-    postedDate: "2026-04-27",
-    status: "open",
-    description: "Remote customer support role helping school district partners use the SchooLinks college and career readiness platform. Responsibilities include responding to chat and email support requests, meeting response goals, troubleshooting platform issues, escalating issues to product or engineering, and tracking conversations in support tools. Salary range listed at $55,000–$66,000.",
-    link: "https://apply.workable.com/schoolinks/j/241D376F18/"
-  },
+  category: "Customer Support Jobs",
+  title: "Care Manager - Patient Call Center (Remote)",
+  company: "IQVIA",
+  type: "Full-Time",
+  postedDate: "2026-04-16",
+  status: "open",
+  link: "https://jobs.iqvia.com/en/jobs/R1538120-0",
+  description: "Remote patient call center role helping with insurance support, benefit investigations, copay assistance, prior authorizations, and appeals. Healthcare experience is helpful. Pay is $22-$23/hr."
+},
+{
+  category: "Customer Support Jobs",
+  title: "Travel Consultant - After Hours/Evening/Weekends",
+  company: "ADTRAV",
+  type: "Full-Time",
+  postedDate: "2026-04-16",
+  status: "open",
+  link: "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=bb8f2986-cad9-4a36-8581-8007cc1f8769&ccId=19000101_000001&lang=en_US&jobId=577383",
+  description: "Remote travel consultant role handling bookings, itinerary changes, flights, hotels, and customer travel support. Evening, weekend, and holiday shifts required. Pay starts at $23-$25/hr plus shift differentials."
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Specialist, Global Payroll",
+  company: "Rippling",
+  type: "Full-Time",
+  postedDate: "2026-04-15",
+  status: "open",
+  pay: "$15.00 - $23.49/hr",
+  location: "Remote (Pacific or Mountain Time Zone States, US)",
+  link: "https://ats.rippling.com/rippling/jobs/9a9fd0f2-033b-492b-8302-2c17f93b115f?_gl=1*oqxulz*_gcl_au*Mzg1MTU5Nzg4LjE3NzYyNTk2Mjg.",
+  description: "Help Rippling customers with global payroll issues, payroll processing, tax filing, and compliance questions. This role is a good fit for someone with customer-facing experience who wants to grow into payroll and HR software support."
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Specialist, Spend",
+  company: "Rippling",
+  type: "Full-Time",
+  postedDate: "2026-04-15",
+  status: "open",
+  pay: "$22.19 - $23.49/hr",
+  location: "Remote (NV, CA, NM, CO, TX, AZ, UT, WA, OR, ID, MT, WY)",
+  link: "https://ats.rippling.com/rippling/jobs/cc4085ed-7582-408f-998e-173e9481455d?_gl=1*wloinj*_gcl_au*Mzg1MTU5Nzg4LjE3NzYyNTk2Mjg.",
+  description: "Support customers using Rippling’s spend platform by helping with reimbursements, expense reports, vendor payments, invoice management, and finance software integrations. This role is ideal for people with customer support experience and some finance or bookkeeping knowledge."
+},
+{
+  category: "Customer Support Jobs",
+  title: "German Payroll Subject Matter Expert (SME) - Contract",
+  company: "Rippling",
+  type: "Contract",
+  postedDate: "2026-04-15",
+  status: "open",
+  pay: "Not Listed",
+  location: "Dublin, Ireland",
+  link: "https://ats.rippling.com/rippling/jobs/14cc106b-77a0-4e6f-817c-f52efd7d9fb0?_gl=1*1wtjpfx*_gcl_au*Mzg1MTU5Nzg4LjE3NzYyNTk2Mjg.",
+  description: "Serve as Rippling’s payroll support lead for Germany by building support processes, documenting payroll requirements, creating training materials, and helping teams handle German payroll compliance. This contract role is best for experienced German payroll specialists."
+},
+{
+  category: "Customer Support Jobs",
+  title: "Senior Customer Support Specialist (Canada - French Speaking)",
+  company: "Rippling",
+  type: "Full-Time",
+  postedDate: "2026-04-15",
+  status: "open",
+  pay: "Not Listed",
+  location: "Remote (Canada)",
+  link: "https://ats.rippling.com/rippling/jobs/298d730a-25e7-451f-bdcd-4671d06f5a69?_gl=1*1wtjpfx*_gcl_au*Mzg1MTU5Nzg4LjE3NzYyNTk2Mjg.",
+  description: "Support Rippling customers through phone, chat, email, and video while resolving product issues and improving the customer experience. This role is best for bilingual English/French support professionals with several years of customer-facing experience."
+},
+{
+  category: "Technical & Operations Jobs",
+  title: "Technical Support Specialist, Platform",
+  company: "Rippling",
+  type: "Full-Time",
+  postedDate: "2026-04-15",
+  status: "open",
+  pay: "$20.00 - $23.00/hr",
+  location: "Remote (CA, WA, AZ, OR, ID, WY, NM, NV, CO, MT, TX)",
+  link: "https://ats.rippling.com/rippling/jobs/eae8615d-58fb-4e2f-bf8d-0e4c2bc6dbbd?_gl=1*gczkbg*_gcl_au*Mzg1MTU5Nzg4LjE3NzYyNTk2Mjg.",
+  description: "Help customers troubleshoot technical issues with Rippling’s platform through email, chat, and video support. This is a strong growth role for people who want to move from customer service into tech support."
+},
   {
-    category: "Customer Support Jobs",
-    title: "Customer Support Team Lead",
-    company: "Wise",
-    type: "Remote / Hybrid - São Paulo, Brazil",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "Lead the Business Customer Support Team, manage KPIs, coach agents, maintain SLAs, improve service quality, and partner cross-functionally. Requires English and Portuguese fluency and leadership experience in customer support.",
-    link: "https://wise.jobs/job/customer-support-team-lead-in-sao-paulo-jid-3392"
-  },
+  category: "No Phone Jobs",
+  title: "AI Writing & Content Reviewer",
+  company: "Outlier (Scale AI)",
+  type: "Remote | Freelance (Flexible Hours)",
+  postedDate: "2026-04-10",
+  status: "open",
+  description: "Flexible remote role reviewing and rating AI-generated responses. No phone work required. Ideal for strong writers with attention to detail. Work anytime and get paid weekly.",
+  link: "https://app.outlier.ai/en/expert/opportunities/4613691005?location=United%20States&type=generalist"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Specialist",
+  company: "Edmentum",
+  type: "Remote | Full-Time",
+  postedDate: "2026-04-10",
+  status: "open",
+  description: "Full-time remote customer support role handling inbound interactions, resolving issues, and documenting cases. Includes benefits and growth opportunities. Requires prior customer service experience and comfort working on the phone.",
+  link: "https://job-boards.greenhouse.io/edmentum/jobs/5857168004"
+},
+{
+  category: "Content & Education Jobs",
+  title: "Instructional Designer Services Analyst II",
+  company: "Conduent",
+  type: "Remote | Full-Time",
+  postedDate: "2026-04-10",
+  status: "open",
+  description: "Higher-paying remote role creating training and learning materials. Work with subject matter experts to design engaging content and structured learning experiences. Ideal for those with teaching, training, or content development backgrounds.",
+  link: "https://careers.conduent.com/us/en/job/21095/Instructional-Designer-Services-Analyst-II"
+},
+  
   {
-    category: "Customer Support Jobs",
-    title: "Customer Support Area Lead",
-    company: "Wise",
-    type: "Hybrid / Remote - Tallinn, Estonia",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "Lead regional business support operations across multiple locations, manage Senior Leads, oversee KPIs, staffing, budgeting, compliance, and customer service performance. Requires large-team leadership experience and strong operations management skills.",
-    link: "https://wise.jobs/job/customer-support-area-lead-in-tallinn-jid-3361"
-  },
+  category: "Customer Support Jobs",
+  title: "Patient Support Specialist",
+  company: "Mood Health",
+  type: "Remote | Full-Time",
+  postedDate: "2026-04-09",
+  status: "open",
+  description: "Remote patient support role assisting with scheduling, care coordination, and patient inquiries across phone, email, and messaging. Includes insurance support, documentation, and workflow management. Requires strong communication, multitasking, and attention to detail. Healthcare or customer support experience preferred.",
+  link: "https://job-boards.greenhouse.io/moodhealth/jobs/5175051008"
+},
+
+{
+  category: "Technical & Operations Jobs",
+  title: "Technical Customer Support Specialist",
+  company: "Nestmed",
+  type: "Remote | Full-Time (PST Hours)",
+  postedDate: "2026-04-09",
+  status: "open",
+  description: "Technical support role troubleshooting product issues, managing support tickets, and collaborating with engineering teams. Involves diagnosing bugs, improving workflows, and supporting healthcare users. Requires 3+ years of support experience, Zendesk familiarity, and strong problem-solving skills. Healthtech or SaaS experience preferred.",
+  link: "https://jobs.ashbyhq.com/nestmed/73315709-7a1e-4192-802e-0f5ecafa30f9"
+},
+
+{
+  category: "Customer Support Jobs",
+  title: "Healthcare Customer Service Representative",
+  company: "TaskUs",
+  type: "Remote (Location-Based) | Full-Time",
+  postedDate: "2026-04-09",
+  status: "open",
+  description: "Healthcare customer service role handling inbound and outbound calls, assisting with insurance, billing, and medical record requests. Includes data entry, documentation, and HIPAA-compliant processes. Requires call center experience, customer service skills, and ability to manage multiple systems.",
+  link: "https://jobs.taskus.com/united-states/job/healthcare-customer-service-representative/92837797894726342"
+},
+  
   {
-    category: "Customer Support Jobs",
-    title: "Customer Support Specialist",
-    company: "Wise",
-    type: "Work from Office - Hyderabad, India",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "First point of contact supporting customers via phone, chat, and email. Resolve complex issues with empathy, meet KPIs, maintain accurate case records, and contribute to continuous improvement in a fast-paced global fintech environment.",
-    link: "https://wise.jobs/job/customer-support-specialist-in-hyderabad-jid-2766"
-  },
-  {
-    category: "Customer Support Jobs",
-    title: "Customer Support Site Lead",
-    company: "Wise",
-    type: "Hybrid / Remote - Budapest, Hungary",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "Senior leadership role overseeing Budapest customer support operations. Lead Senior Team Leads, manage KPIs, staffing, compliance, retention, and site strategy while scaling a high-performing support organization.",
-    link: "https://wise.jobs/job/customer-support-site-lead-in-budapest-jid-3099"
-  },
-  {
-    category: "Customer Support Jobs",
-    title: "Customer Support Associate (1 Year FTC)",
-    company: "Wise",
-    type: "Hybrid - Tokyo, Japan",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "Provide customer support via phone, chat, and email for Japanese and global customers. Resolve issues end-to-end, meet KPIs, and work in a fast-paced fintech environment. Requires native Japanese and intermediate English.",
-    link: "https://wise.jobs/job/customer-support-associate-1-year-ftc-in-tokyo-japan-jid-287"
-  },
-  {
-    category: "Customer Support Jobs",
-    title: "Customer Support Associate - Japanese Speaker",
-    company: "Wise",
-    type: "Hybrid - São Paulo, Brazil",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "Support Japanese, Portuguese, and English-speaking customers via phone, email, and chat. Resolve issues, improve processes, meet support metrics, and work in a fast-paced fintech environment. Requires Japanese, Portuguese, and English fluency.",
-    link: "https://wise.jobs/job/customer-support-associate-japanese-speaker-in-sao-paulo-jid-3149"
-  },
-  {
-    category: "Technical & Operations Jobs",
-    title: "Technical Support Specialist",
-    company: "Airtable",
-    type: "Remote - London, United Kingdom",
-    postedDate: "2026-04-24",
-    status: "open",
-    description: "Support enterprise customers by troubleshooting technical issues via email and video calls, escalating complex cases, documenting trends, improving knowledge base content, and helping customers optimize workflows. Experience with APIs, databases, and SaaS support preferred.",
-    link: "https://job-boards.greenhouse.io/airtable/jobs/8497826002"
-  }
+  category: "Customer Support Jobs",
+  title: "Remote Customer Service Representative",
+  company: "Kobie",
+  type: "Remote (FL, GA, LA, MS, OK, TN, TX Only) | Full-Time",
+  postedDate: "2026-04-08",
+  status: "open",
+  description: "Remote customer service role handling inbound loyalty program inquiries. Requires 2+ years of customer service experience, Microsoft Office skills, strong communication, and ability to manage high call volume.",
+  link: "https://jobs.lever.co/kobie/8b98b2e3-43f7-4139-a6a6-a247b07fa29e"
+},
+
+{
+  category: "No Phone Jobs",
+  title: "Back Office Representative (Part-Time)",
+  company: "Concentrix",
+  type: "Remote | Part-Time",
+  postedDate: "2026-04-08",
+  status: "open",
+  description: "Non-phone role reviewing and labeling images, videos, and text. Includes verifying data accuracy and correcting AI errors.",
+  link: "https://jobs.concentrix.com/job/?id=R1713611"
+},
+
+{
+  category: "Customer Support Jobs",
+  title: "Inside Sales Rep - Automotive",
+  company: "Concentrix",
+  type: "Remote | Full-Time",
+  postedDate: "2026-04-08",
+  status: "open",
+  description: "Inbound and outbound sales role handling customer calls, closing sales, and upselling services. Requires sales experience and comfort with quotas.",
+  link: "https://jobs.concentrix.com/job/?id=R1720682"
+},
+
+{
+  category: "Customer Support Jobs",
+  title: "Healthcare Customer Service Representative",
+  company: "TTEC",
+  type: "Remote | Full-Time",
+  postedDate: "2026-04-08",
+  status: "open",
+  description: "Healthcare support role assisting customers with benefits, enrollment, and account questions. Requires 6+ months customer service experience.",
+  link: "https://www.ttecjobs.com/en/job/austin/healthcare-customer-service-representative-remote-usa/44028/93705531456"
+},
+
+{
+  category: "Customer Support Jobs",
+  title: "Customer Experience Agent",
+  company: "Alorica",
+  type: "Remote | Full-Time",
+  postedDate: "2026-04-08",
+  status: "open",
+  description: "Customer service role handling inbound calls, resolving issues, and updating customer records. Entry-level friendly with 6+ months experience.",
+  link: "https://fa-euxw-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs/preview/235291/"
+},
+
+{
+  category: "Customer Support Jobs",
+  title: "Healthcare Customer Service Representative",
+  company: "Alorica",
+  type: "Remote (Select States Only) | Full-Time",
+  postedDate: "2026-04-08",
+  status: "open",
+  description: "Healthcare customer support role assisting with benefits, accounts, and customer inquiries. Requires 6+ months experience and wired internet.",
+  link: "https://fa-euxw-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs/preview/234903/"
+},
+
+{
+  category: "Customer Support Jobs",
+  title: "Remote Customer Service Representative",
+  company: "Kobie",
+  type: "Remote (FL, GA, LA, MS, OK, TN, TX Only) | Full-Time",
+  postedDate: "2026-03-30",
+  status: "open",
+  description: "Remote customer service role handling inbound loyalty program inquiries. Requires 2+ years of customer service experience, Microsoft Office skills, strong communication, and the ability to manage a high volume of calls.",
+  link: "https://jobs.lever.co/kobie/8b98b2e3-43f7-4139-a6a6-a247b07fa29e"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Contact Center Representative - Work From Home",
+  company: "AWL",
+  type: "Remote (TX Only) | Part-Time",
+  postedDate: "2026-03-30",
+  status: "open",
+  description: "Part-time remote contact center role connecting consumers with insurance agents. Includes inbound and outbound calls, short call volume, follow-up calls, and team chat communication. No insurance license required.",
+  link: "https://awl.com/careers/#joblist"
+},
+{
+  category: "No Phone Jobs",
+  title: "Online Chat Specialist (Entry Level)",
+  company: "Richard Franzblau LLC",
+  type: "Remote (United States) | Full-Time",
+  postedDate: "2026-03-30",
+  status: "open",
+  description: "Entry-level remote chat support role helping customers through live chat, email, and digital platforms. Good fit for someone with strong written communication, multitasking ability, and interest in non-phone work.",
+  link: "https://jobs.reczee.com/richard-franzblau-llc/ZH76k/apply"
+},
+{
+  category: "Technical & Operations Jobs",
+  title: "Remote Office Administrator",
+  company: "Richard Franzblau LLC",
+  type: "Remote | Full-Time",
+  postedDate: "2026-03-30",
+  status: "open",
+  description: "Remote admin role focused on digital file organization, scheduling, data entry, reporting, meeting coordination, and general virtual office support.",
+  link: "https://jobs.reczee.com/richard-franzblau-llc/0NUbV/apply"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Service Representative - Work From Home",
+  company: "Connexus Resource Group",
+  type: "Remote | Full-Time",
+  postedDate: "2026-03-30",
+  status: "open",
+  description: "Remote customer service role handling phone, email, and live chat support. Includes resolving customer issues, documenting interactions, and providing friendly service in a call center environment.",
+  link: "https://connexusresourcegroup.com/careers/careers-list/"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Representative I",
+  company: "Prokeep",
+  type: "Remote (United States) | Full-Time",
+  postedDate: "2026-03-30",
+  status: "open",
+  description: "Customer support role for a SaaS company handling inbound phone and email inquiries, troubleshooting platform issues, documenting cases in HubSpot, and helping improve customer experience. Requires at least 1 year of support experience.",
+  link: "https://jobs.ashbyhq.com/prokeep/fc63f678-af59-4620-b6b5-1dd3643f8b36"
+},
+
+{
+  category: "No Phone Jobs",
+  title: "Data Quality Specialist",
+  company: "Youth In Need",
+  type: "Remote (MO/IL Only) | Full-Time",
+  postedDate: "2026-03-28",
+  status: "open",
+  description: "Needed one year data entry experience, Microsoft Office and Organization skills Managing and updating client records to make sure everything is accurate and organized. This includes data entry, reviewing files, and using basic computer systems. Great for detail-oriented individuals. Location restricted to Missouri/Illinois.",
+  link: "https://youthinneed.aaimtrack.com/jobs/1276357"
+},
+{
+  category: "No Phone Jobs",
+  title: "Social Media Agent",
+  company: "LiveWorld",
+  type: "Remote US | Part-Time",
+  postedDate: "2026-03-28",
+  status: "open",
+  description: "No experience needed!! Reply to comments and messages on social media, approve or remove posts, and help customers using pre-written responses. Non-phone role. Flexible schedule.  ",
+  link: "http://liveworldweb.wpenginepowered.com/HR/US/"
+},
+
+{
+  category: "Technical & Operations Jobs",
+  title: "AI Training Specialist",
+  company: "Alignerr",
+  type: "Remote | Contract",
+  postedDate: "2026-03-28",
+  status: "open",
+  description: "Needed Strong reading + writing, Attention to detail and Follow structured guidelines No AI experience needed!! AI Training Specialists to complete structured tasks that help AI models learn and improve. You'll work on labeling, rating, and evaluating AI outputs across a variety of formats.",
+  link: "https://www.alignerr.com/jobs/ba532580-fb03-4fa7-ba54-7e27b8a02df3"
+},
+{
+  category: "No Phone Jobs",
+  title: "Document Review Specialist",
+  company: "Alignerr",
+  type: "Remote | Contract",
+  postedDate: "2026-03-28",
+  status: "open",
+  description: "Requirements: strong reading skills, attention to detail, and ability to follow rules. No AI experience needed. Read, annotate, and classify documents that help AI systems understand structured and unstructured text.",
+  link: "https://www.alignerr.com/jobs/6b997e72-0b4d-42ca-87a9-1e6429339379"
+},
+{
+  category: "No Phone Jobs",
+  title: "Video Annotation Specialist",
+  company: "Alignerr",
+  type: "Remote | Contract",
+  postedDate: "2026-03-28",
+  status: "open",
+  description: " Needed to be able to Watch + label videos, Attention to detail and Follow instructions. No experience required!!We're looking for Video Annotation Specialists to segment, label, and describe video content used to train AI models. You'll work at the shot or scene level to help AI understand visual media.",
+  link: "https://www.alignerr.com/jobs/691ff701-0658-4a5f-8767-b6d6d3b0fdc8"
+},
+{
+  category: "No Phone Jobs",
+  title: "Data Labeling Specialist",
+  company: "Alignerr",
+  type: "Remote | Contract",
+  postedDate: "2026-03-28",
+  status: "open",
+  description: "We're looking for Data Labeling Specialists to categorize, tag, and annotate data used to train AI systems. This is structured, task-based work that anyone with attention to detail can do.",
+  link: "https://www.alignerr.com/jobs/d71c1f46-dd7a-4bb7-a78a-7d1cf6431b6c"
+},
+
+{
+  category:"Technical & Operations Jobs",
+  title:"Support Specialist (DX)",
+  company:"Atlassian",
+  type:"Remote US | Full Time",
+  postedDate:"2026-03-27",
+  status:"open",
+  link:"https://www.atlassian.com/company/careers/details/24840"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Experience Specialist",
+  company:"Clipboard",
+  type:"Remote APAC | Full Time",
+  postedDate:"2026-03-26",
+  status:"open",
+  link:"https://jobs.ashbyhq.com/clipboard/6d7d384b-2b99-44f5-be2a-cc693c629d9e?utm_source=careers"
+},
+{
+  category:"Customer Success Jobs",
+  title:"Account Manager - Dental - International",
+  company:"Clipboard",
+  type:"Remote Global | Full Time",
+  postedDate:"2026-03-26",
+  status:"open",
+  link:"https://jobs.ashbyhq.com/clipboard/7ace7dca-7509-4b78-9c9f-4705f792c01a?departmentId=46c2187d-bb22-41e1-a9ef-7d07fff2f7fa&utm_source=careers&workplaceType=Remote"
+},
+{
+  category:"Customer Success Jobs",
+  title:"Lead Generation Specialist - Dental - International",
+  company:"Clipboard",
+  type:"Remote Global | Full Time",
+  postedDate:"2026-03-26",
+  status:"open",
+  link:"https://jobs.ashbyhq.com/clipboard/a453ed61-4fe9-4db7-b0b7-935f3b1d7985?departmentId=46c2187d-bb22-41e1-a9ef-7d07fff2f7fa&utm_source=careers&workplaceType=Remote"
+},
+{
+  category: "Customer Support Jobs",
+  title: "Customer Support Representative (East Coast Hours)",
+  company: "Comply",
+  type: "Remote | Full Time",
+  postedDate: "2026-03-25",
+  status: "open",
+  link: "https://jobs.lever.co/comply/a94be11c-e263-4e7c-b032-074323cc6e89"
+},
+{
+  category: "Customer Success Jobs",
+  title: "Customer Success Manager",
+  company: "Comply",
+  type: "Remote | Full Time",
+  postedDate: "2026-03-25",
+  status: "open",
+  link: "https://jobs.lever.co/comply/72009713-ec54-4227-90a5-867d4f83da38"
+},
+{
+  category: "Customer Success Jobs",
+  title: "Associate Onboarding Manager",
+  company: "Comply",
+  type: "Remote | Full Time",
+  postedDate: "2026-03-25",
+  status: "open",
+  link: "https://jobs.lever.co/comply/d94d08cd-9080-42df-b75c-345d192a1c15"
+},
+
+{
+  category:"Member Support Jobs",
+  title:"Client Support Specialist",
+  company:"ROO",
+  type:"Remote OH,AZ,FL,NC USA | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://job-boards.greenhouse.io/roo/jobs/5135157008"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Support Specialist",
+  company:"HubSpot",
+  type:"Remote Colombia | Full Time",
+  postedDate:"2026-03-24",
+  status:"open",
+  link:"https://www.hubspot.com/careers/jobs/4950449?hubs_signup-cta=careers-apply"
+},
+
+{
+  category:"Customer Support Jobs",
+  title:"Customer Support Specialist",
+  company:"HubSpot",
+  type:"Remote Singapore | Full Time",
+  postedDate:"2026-03-24",
+  status:"open",
+  link:"https://www.hubspot.com/careers/jobs/159214?hubs_signup-cta=careers-apply"
+},
+
+{
+  category:"Customer Support Jobs",
+  title:"German Customer Support Specialist",
+  company:"HubSpot",
+  type:"Remote Germany | Full Time",
+  postedDate:"2026-03-24",
+  status:"open",
+  link:"https://www.hubspot.com/careers/jobs/5097150?hubs_signup-cta=careers-apply"
+},
+
+{
+  category:"Customer Support Jobs",
+  title:"Customer Service Representative",
+  company:"SupportNinja",
+  type:"Remote | Full-Time",
+  postedDate:"2026-03-24",
+  status:"open",
+  link:"https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=41a778b2-3a5e-42c7-9770-87f62458fb3e&ccId=9200871460505_2&lang=en_US&jobId=570991"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Happiness Hero",
+  company:"Hello Innovation",
+  type:"Remote | Full-Time/Part-Time",
+  postedDate:"2026-03-24",
+  status:"open",
+  link:"https://jobs.helloinnovation.com/apply/8dKoCLVtNX/Customer-Happiness-Hero-Remote"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Advocate Associate",
+  company:"American Fidelity",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://americanfidelity.wd5.myworkdayjobs.com/en-US/External/details/Customer-Advocate-Associate_JR59-1?q=Customer%20Advocate%20Associate"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Care Specialist",
+  company:"Koala Health",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://jobs.lever.co/koalahealth/9dec7e3d-2f16-4c46-b52e-944e2b976d10"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Support Representative",
+  company:"Auto HDR",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://autohdr-1748964592.na.teamtailor.com/jobs/572039-customer-support-representative"
+},
+{
+  category:"Customer Support Jobs",
+  title:"Customer Support Consultant",
+  company:"SupportYourApp",
+  type:"Remote | International",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://apply.workable.com/supportyourapp/j/D629590BF4/"
+},
+
+/* CUSTOMER SUCCESS JOBS */
+
+{
+  category:"Customer Success Jobs",
+  title:"Customer Success Manager",
+  company:"Upheal",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://www.upheal.io/careers/customer-success-manager"
+},
+{
+  category:"Customer Success Jobs",
+  title:"Associate Customer Success Manager",
+  company:"Five9",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://www.five9.com/about/careers/job-detail?gh_jid=5572265004"
+},
+{
+  category:"Customer Success Jobs",
+  title:"Customer Success Specialist",
+  company:"8am",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://www.8am.com/openings/?gh_jid=4653135006"
+},
+
+/* MEMBER SUPPORT JOBS */
+{
+  category:"Member Support Jobs",
+  title:"Member Support Representative",
+  company:"Foodsmart",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://jobs.lever.co/foodsmart/8106c061-b10f-48f7-8fe8-ed528076d054"
+},
+{
+  category:"Member Support Jobs",
+  title:"Member Experience Specialist",
+  company:"Facet",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://apply.workable.com/facetwealth/j/DD48A8AC7F/"
+},
+
+/* TECHNICAL & OPERATIONS JOBS */
+
+{
+  category:"Technical & Operations Jobs",
+  title:"User Operations Specialist",
+  company:"Harvey",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://www.remotehunter.com/apply-with-ai/f1a4f92d-2bd8-4b75-af90-b53b8647a090"
+},
+
+/* CONTENT & EDUCATION JOBS */
+
+{
+  category:"Content & Education Jobs",
+  title:"Content Specialist (Customer Education)",
+  company:"Harvey",
+  type:"Remote | Full Time",
+  postedDate:"2026-03-18",
+  status:"open",
+  link:"https://jobs.ashbyhq.com/harvey/97d26d31-a9af-40ec-a994-b6c33f56123e"
+},
+
+/* NO PHONE JOBS */
+{
+  category:"No Phone Jobs",
+  title:"Content Reviewer (Search Engine Evaluator)",
+  company:"TELUS Digital",
+  type:"Remote | Part-Time | Freelance",
+  postedDate:"2026-03-24",
+  status:"open",
+  link:"https://www.telusinternational.ai/cmp/public/jobs/available/128325"
+},
+
+
 ];
 
-const categoryGroups = document.getElementById("categoryGroups");
+/* ============================================
+   AUTOMATIC WEBSITE LOGIC
+   ============================================ */
+
+const now = new Date();
+const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+
+const categoryGroupsContainer = document.getElementById("categoryGroups");
 const categoryFilter = document.getElementById("categoryFilter");
 const locationFilter = document.getElementById("locationFilter");
 const searchFilter = document.getElementById("searchFilter");
 
-const categoryIcons = {
-  "Customer Support Jobs": "images/customer-support-icon.png",
-  "Technical & Operations Jobs": "images/technical-icon.png",
-  "No Phone Jobs": "images/no-phone-icon.png",
-  "Content & Education Jobs": "images/content-education-icon.png",
-  "Customer Success Jobs": "images/customer-success-icon.png"
+const categoryIconMap = {
+  "Customer Support Jobs": "support-icon.png",
+  "No Phone Jobs": "laptop-icon.png",
+  "Customer Success Jobs": "success-icon.png",
+  "Technical & Operations Jobs": "ops-icon.png",
+  "Content & Education Jobs": "education-icon.png",
+  "Member Support Jobs": "member-icon.png"
 };
 
-function getCategorySubtitle(category){
-  const subtitles = {
-    "Customer Support Jobs": "Phone, chat, email, and customer care roles",
-    "Technical & Operations Jobs": "Tech support, operations, and platform support",
-    "No Phone Jobs": "Writing, admin, curriculum, and non-phone roles",
-    "Content & Education Jobs": "Curriculum, teaching support, and content creation",
-    "Customer Success Jobs": "Client support, onboarding, and account growth"
-  };
+function escapeHTML(value){
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
 
-  return subtitles[category] || "Remote job opportunities";
+function formatDate(dateString){
+  if(!dateString) return "Not listed";
+  const date = new Date(dateString + "T00:00:00");
+  return date.toLocaleDateString("en-US", {
+    year:"numeric",
+    month:"long",
+    day:"numeric"
+  });
 }
 
 function populateCategoryFilter(){
-  const categories = [...new Set(jobs.map(job => job.category))].sort();
+  const categories = [...new Set(jobs.map(job => job.category).filter(Boolean))];
 
   categories.forEach(category => {
     const option = document.createElement("option");
@@ -760,111 +1418,206 @@ function populateCategoryFilter(){
   });
 }
 
-function filterJobs(){
+function getJobLocationText(job){
+  return `${job.location || ""} ${job.type || ""}`;
+}
+
+function isInternationalJob(job){
+  const text = getJobLocationText(job).toLowerCase();
+
+  const usTerms = [
+    "united states", "usa", " u.s.", " us ", "remote us", "remote (us",
+    "tx", "ca", "fl", "ga", "la", "ms", "ok", "tn", "nv", "az", "ut",
+    "wa", "or", "id", "mt", "wy", "nm", "co", "oh", "nc", "mo", "il"
+  ];
+
+  const internationalTerms = [
+    "international", "global", "canada", "philippines", "ireland",
+    "germany", "singapore", "colombia", "apac", "dublin"
+  ];
+
+  if(internationalTerms.some(term => text.includes(term))) return true;
+  if(usTerms.some(term => text.includes(term))) return false;
+
+  return false;
+}
+
+function getFilteredJobs(){
   const selectedCategory = categoryFilter.value;
   const selectedLocation = locationFilter.value.toLowerCase();
   const searchText = searchFilter.value.toLowerCase().trim();
 
   return jobs.filter(job => {
-    const matchesCategory = selectedCategory === "all" || job.category === selectedCategory;
-    const matchesLocation = selectedLocation === "all" || job.type.toLowerCase().includes(selectedLocation);
-    const matchesSearch =
-      job.title.toLowerCase().includes(searchText) ||
-      job.company.toLowerCase().includes(searchText) ||
-      job.description.toLowerCase().includes(searchText);
+    const matchesStatus = job.status === "open";
 
-    return matchesCategory && matchesLocation && matchesSearch;
+    const matchesCategory =
+      selectedCategory === "all" ||
+      job.category === selectedCategory;
+
+    const locationText = getJobLocationText(job).toLowerCase();
+
+    let matchesLocation = true;
+
+    if(selectedLocation !== "all"){
+      if(selectedLocation === "international"){
+        matchesLocation = isInternationalJob(job);
+      } else {
+        matchesLocation = locationText.includes(selectedLocation);
+      }
+    }
+
+    const searchableText = `${job.title || ""} ${job.company || ""} ${job.category || ""} ${job.type || ""} ${job.location || ""} ${job.description || ""}`.toLowerCase();
+
+    const matchesSearch =
+      searchText === "" ||
+      searchableText.includes(searchText);
+
+    return matchesStatus && matchesCategory && matchesLocation && matchesSearch;
   });
 }
 
-function renderJobs(){
-  const filteredJobs = filterJobs();
-  categoryGroups.innerHTML = "";
+function groupJobsByCategory(jobArray){
+  const grouped = {};
 
-  if(filteredJobs.length === 0){
-    categoryGroups.innerHTML = `<div class="empty-message">No jobs match your filters right now. Try changing the category, location, or search term.</div>`;
+  jobArray.forEach(job => {
+    if(!grouped[job.category]){
+      grouped[job.category] = [];
+    }
+    grouped[job.category].push(job);
+  });
+
+  return grouped;
+}
+
+function getCategoryIcon(categoryName){
+  return categoryIconMap[categoryName] || "template-icon.png";
+}
+
+function createListingRow(job){
+  const jobMeta = [
+    job.location ? escapeHTML(job.location) : "",
+    job.type ? escapeHTML(job.type) : "",
+    `Posted: ${formatDate(job.postedDate)}`
+  ].filter(Boolean).join(" • ");
+
+  return `
+    <div class="listing-row">
+      <div class="job-title">${escapeHTML(job.title)}</div>
+      <div class="company-name">${escapeHTML(job.company)}</div>
+      <div class="listing-meta">${jobMeta}</div>
+
+      <div class="job-actions">
+        <a class="apply-btn" href="${escapeHTML(job.link)}" target="_blank" rel="noopener noreferrer">
+          Apply Here
+        </a>
+
+        ${job.description ? `
+          <button class="job-toggle-btn" type="button">View Details</button>
+        ` : ""}
+      </div>
+
+      ${job.description ? `
+        <div class="job-details">
+          ${escapeHTML(job.description)}
+        </div>
+      ` : ""}
+    </div>
+  `;
+}
+
+function renderCategoryJobs(){
+  const openJobs = getFilteredJobs();
+
+  if(openJobs.length === 0){
+    categoryGroupsContainer.innerHTML = `
+      <div class="empty-message">
+        No jobs match your filters right now.
+      </div>
+    `;
     return;
   }
 
-  const groupedJobs = filteredJobs.reduce((groups, job) => {
-    if(!groups[job.category]){
-      groups[job.category] = [];
-    }
-    groups[job.category].push(job);
-    return groups;
-  }, {});
+  const groupedCategories = groupJobsByCategory(openJobs);
 
-  Object.keys(groupedJobs).forEach((category, categoryIndex) => {
-    const card = document.createElement("div");
-    card.className = "category-card";
-
-    const iconSrc = categoryIcons[category] || "images/filter-icon.png";
-
-    const listingsHTML = groupedJobs[category].map((job, index) => {
-      const detailsId = `details-${categoryIndex}-${index}`;
+  const cards = Object.entries(groupedCategories)
+    .map(([categoryName, listings], index) => {
+      const sortedListings = [...listings].sort((a,b) => new Date(b.postedDate) - new Date(a.postedDate));
+      const sectionId = `listings-${index}`;
+      const iconFile = getCategoryIcon(categoryName);
 
       return `
-        <div class="listing-row">
-          <div class="job-title">${job.title}</div>
-          <div class="company-name">${job.company}</div>
-          <div class="listing-meta">${job.type} • Posted ${job.postedDate} • ${job.status}</div>
-          <div class="job-actions">
-            <a class="apply-btn" href="${job.link}" target="_blank" rel="noopener noreferrer">Apply →</a>
-            <button class="job-toggle-btn" type="button" data-details="${detailsId}">➕ View Details</button>
+        <article class="category-card">
+          <div class="category-heading">
+            <img src="images/${iconFile}" class="category-icon-img" alt="">
+            <div>
+              <h3>${escapeHTML(categoryName)}</h3>
+              <div class="category-subtitle">
+                ${sortedListings.length} open listing${sortedListings.length !== 1 ? "s" : ""}
+              </div>
+            </div>
           </div>
-          <div id="${detailsId}" class="job-details">${job.description}</div>
-        </div>
+
+          <button class="view-listings-btn" type="button" data-target="${sectionId}">
+            <span>View Listings (${sortedListings.length})</span>
+            <span>→</span>
+          </button>
+
+          <div id="${sectionId}" class="toggle-section">
+            <div class="listing-list">
+              ${sortedListings.map(job => createListingRow(job)).join("")}
+            </div>
+          </div>
+        </article>
       `;
     }).join("");
 
-    card.innerHTML = `
-      <div class="category-heading">
-        <img src="${iconSrc}" class="category-icon-img" alt="">
-        <div>
-          <h3>${category}</h3>
-          <div class="category-subtitle">${getCategorySubtitle(category)}</div>
-        </div>
-      </div>
-
-      <button class="view-listings-btn" type="button">
-        <span>View Listings (${groupedJobs[category].length})</span>
-        <span>+</span>
-      </button>
-
-      <div class="toggle-section">
-        <div class="listing-list">
-          ${listingsHTML}
-        </div>
-      </div>
-    `;
-
-    categoryGroups.appendChild(card);
-  });
-
-  document.querySelectorAll(".view-listings-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const section = button.nextElementSibling;
-      const icon = button.querySelector("span:last-child");
-      section.classList.toggle("show");
-      icon.textContent = section.classList.contains("show") ? "−" : "+";
-    });
-  });
-
-  document.querySelectorAll(".job-toggle-btn").forEach(button => {
-    button.addEventListener("click", () => {
-      const details = document.getElementById(button.dataset.details);
-      details.classList.toggle("show");
-      button.textContent = details.classList.contains("show") ? "▲ Hide Details" : "➕ View Details";
-    });
-  });
+  categoryGroupsContainer.innerHTML = cards;
 }
 
-categoryFilter.addEventListener("change", renderJobs);
-locationFilter.addEventListener("change", renderJobs);
-searchFilter.addEventListener("input", renderJobs);
+document.addEventListener("click", function(e){
+  const listingsButton = e.target.closest(".view-listings-btn");
+
+  if(listingsButton){
+    const targetId = listingsButton.getAttribute("data-target");
+    const section = document.getElementById(targetId);
+
+    if(!section) return;
+
+    section.classList.toggle("show");
+
+    const label = listingsButton.querySelector("span:first-child");
+    const arrow = listingsButton.querySelector("span:last-child");
+
+    if(section.classList.contains("show")){
+      label.textContent = label.textContent.replace("View Listings", "Hide Listings");
+      arrow.textContent = "↑";
+    } else {
+      label.textContent = label.textContent.replace("Hide Listings", "View Listings");
+      arrow.textContent = "→";
+    }
+
+    return;
+  }
+
+  const detailButton = e.target.closest(".job-toggle-btn");
+
+  if(detailButton){
+    const row = detailButton.closest(".listing-row");
+    const details = row.querySelector(".job-details");
+
+    if(!details) return;
+
+    details.classList.toggle("show");
+    detailButton.textContent = details.classList.contains("show") ? "Hide Details" : "View Details";
+  }
+});
 
 populateCategoryFilter();
-renderJobs();
+renderCategoryJobs();
+
+categoryFilter.addEventListener("change", renderCategoryJobs);
+locationFilter.addEventListener("change", renderCategoryJobs);
+searchFilter.addEventListener("input", renderCategoryJobs);
 </script>
 
 </body>
