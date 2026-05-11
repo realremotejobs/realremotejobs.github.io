@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -587,9 +588,10 @@ const jobs = [
     category: "Customer Support Jobs",
     title: "Healthcare Customer Service Representative",
     company: "Teleperformance",
-    type: "Remote",
+    type: "Full-Time",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote healthcare customer service role handling phone, email, and chat support. Paid training, benefits, and beginner-friendly experience requirements.",
     link: "https://careersus-teleperformance.icims.com/jobs/80822/2026-80822/job"
 },
@@ -597,9 +599,10 @@ const jobs = [
     category: "Customer Support Jobs",
     title: "Customer Service Representative",
     company: "Teleperformance",
-    type: "Remote",
+    type: "Full-Time",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote customer service role with paid training, benefits, and flexible shift opportunities. Great for customer service backgrounds.",
     link: "https://careersus-teleperformance.icims.com/jobs/80883/remote---customer-service-representative/job"
 },
@@ -607,9 +610,10 @@ const jobs = [
     category: "Customer Support Jobs",
     title: "Customer Service Representative - Day & Evening Shifts",
     company: "Teleperformance",
-    type: "Remote",
+    type: "Full-Time",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote customer support role with day and evening shift availability, paid training, and benefits included.",
     link: "https://careersus-teleperformance.icims.com/jobs/80828/customer-service-representative---day-%26-evening-shifts---work-from-home/job"
 },
@@ -617,9 +621,10 @@ const jobs = [
     category: "Technical & Operations Jobs",
     title: "Technical Support & Sales Representative",
     company: "Teleperformance",
-    type: "Remote",
+    type: "Full-Time",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote technical support role assisting customers with internet, connectivity, and device troubleshooting while supporting sales inquiries.",
     link: "https://careersus-teleperformance.icims.com/jobs/80728/remote--technical-support-%26-sales-representatives/job"
 },
@@ -627,9 +632,10 @@ const jobs = [
     category: "Customer Support Jobs",
     title: "Automotive Customer Service Representative",
     company: "Teleperformance",
-    type: "Remote",
+    type: "Full-Time",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote automotive customer service role handling phone, chat, and email support with paid training and benefits.",
     link: "https://careersus-teleperformance.icims.com/jobs/80824/remote-----automotive-customer-service-representative/job"
 },
@@ -637,19 +643,21 @@ const jobs = [
     category: "Technical & Operations Jobs",
     title: "Residential Technical Support Agent",
     company: "Paramount Staffing",
-    type: "Remote",
+    type: "Contract-to-Hire",
+    location: "Remote — Central or Eastern Time Zone",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote technical support role troubleshooting internet, cable, Wi-Fi, and connectivity issues through phone, chat, and email support.",
     link: "https://www.hireparamount.com/job-board"
 },
 {
-    category: "Customer Support Jobs",
+    category: "No Phone Jobs",
     title: "Care Coordinator",
     company: "Honeydew",
-    type: "Remote",
+    type: "Full-Time",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Mostly non-phone healthcare support role focused on app chat communication, patient coordination, and written support.",
     link: "https://jobs.ashbyhq.com/honeydew/14eb9ad1-ae61-40ab-ba77-6b092366b1f4"
 },
@@ -657,9 +665,10 @@ const jobs = [
     category: "Customer Support Jobs",
     title: "Carrier Associate Benefit Advisor - Seasonal",
     company: "eHealth",
-    type: "Remote",
+    type: "Full-Time Seasonal",
+    location: "Remote — United States",
     postedDate: "2026-05-11",
-    status: "Now Hiring",
+    status: "open",
     description: "Remote insurance sales and customer support role helping customers compare health insurance plans with paid training included.",
     link: "https://ehealthinsurance.wd5.myworkdayjobs.com/en-US/EHI/job/Carrier-Associate-Benefit-Advisor-Seasonal_R4228-1"
       },
@@ -1669,7 +1678,7 @@ function getFilteredJobs(){
   const searchText = searchFilter.value.toLowerCase().trim();
 
   return jobs.filter(job => {
-    const matchesStatus = job.status === "open";
+    const matchesStatus = ["open", "hiring now", "now hiring"].includes(String(job.status || "").toLowerCase());
 
     const matchesCategory =
       selectedCategory === "all" ||
