@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -20,124 +20,132 @@
       --pink: #EC4899;
       --pink-dark: #DB2777;
       --text: #334155;
+      --muted: #64748b;
       --white: #ffffff;
+      --paypal-yellow: #FFD140;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
+      min-height: 100vh;
       font-family: "Inter", Arial, sans-serif;
-      background: var(--light-blue);
+      background:
+        radial-gradient(circle at top left, rgba(236, 72, 153, 0.12), transparent 32%),
+        linear-gradient(180deg, var(--soft-blue), var(--light-blue));
       color: var(--text);
-      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
     }
 
-    header {
-      background: var(--soft-blue);
-      padding: 24px 18px;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo {
-      max-width: 92px;
-      height: auto;
-      margin-bottom: 8px;
-    }
-
-    header h1 {
-      margin: 0;
-      color: var(--navy);
-      font-size: 1.8rem;
-      font-weight: 800;
-    }
-
-    header p {
-      margin: 8px auto 0;
-      max-width: 650px;
-      color: #3b4a66;
-      font-size: 1rem;
-    }
-
-    main {
-      width: min(900px, 92%);
-      margin: 34px auto;
-    }
-
-    .payment-card {
+    .popup-card {
+      width: min(460px, 100%);
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 32px;
-      box-shadow: 0 10px 30px rgba(23, 59, 114, 0.08);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(23, 59, 114, 0.14);
       text-align: center;
     }
 
-    .icon {
-      width: 52px;
-      height: auto;
-      margin-bottom: 10px;
+    h1 {
+      margin: 8px 0 8px;
+      color: var(--navy);
+      font-size: 1.45rem;
+      line-height: 1.25;
     }
 
-    h2 {
-      color: var(--navy);
-      font-size: 1.7rem;
-      margin: 8px 0 10px;
+    .subtitle {
+      margin: 0 auto 16px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.5;
     }
 
     .price {
       display: inline-block;
-      margin: 12px 0 22px;
+      margin: 4px 0 18px;
       padding: 8px 18px;
+      border-radius: 999px;
       background: #fff1f7;
       color: var(--pink-dark);
       border: 1px solid #f9c7dd;
-      border-radius: 999px;
       font-weight: 800;
+      font-size: 1rem;
     }
 
     .includes {
-      max-width: 560px;
-      margin: 22px auto;
       text-align: left;
       background: #f8fbff;
       border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 20px;
+      padding: 16px 18px;
+      margin: 0 0 18px;
     }
 
-    .includes h3 {
+    .includes h2 {
+      margin: 0 0 8px;
       color: var(--navy);
-      margin-top: 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .includes ul {
       margin: 0;
-      padding-left: 20px;
+      padding-left: 18px;
     }
 
     .includes li {
-      margin-bottom: 8px;
+      margin-bottom: 7px;
+      font-size: 0.93rem;
     }
 
-    .paypal-box {
-      margin-top: 24px;
+    .pay-text {
+      margin: 0 0 12px;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .paypal-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+    }
+
+    .paypal-button-custom {
+      text-align: center;
+      border: none;
+      border-radius: 0.45rem;
+      min-width: 12rem;
+      padding: 0 2rem;
+      height: 2.75rem;
+      font-weight: bold;
+      background-color: var(--paypal-yellow);
+      color: #000000;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      cursor: pointer;
     }
 
     .small-note {
-      margin: 18px auto 0;
-      max-width: 620px;
-      font-size: 0.9rem;
-      color: #64748b;
+      margin: 14px auto 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
     }
 
     .back-link {
       display: inline-block;
-      margin-top: 24px;
+      margin-top: 18px;
       color: var(--navy);
-      font-weight: 700;
+      font-weight: 800;
+      font-size: 0.92rem;
       text-decoration: none;
     }
 
@@ -145,100 +153,95 @@
       text-decoration: underline;
     }
 
-    footer {
-      margin-top: 42px;
-      background: var(--soft-blue);
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 22px 16px;
-      color: var(--navy);
-      font-weight: 700;
-    }
+    @media (max-width: 480px) {
+      body {
+        padding: 14px;
+        align-items: flex-start;
+      }
 
-    @media (max-width: 600px) {
-      .payment-card { padding: 24px 18px; }
-      header h1 { font-size: 1.45rem; }
-      h2 { font-size: 1.35rem; }
+      .popup-card {
+        margin-top: 14px;
+        padding: 22px 16px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 1.28rem;
+      }
+
+      .subtitle,
+      .pay-text {
+        font-size: 0.92rem;
+      }
+
+      .includes {
+        padding: 14px;
+      }
+
+      .includes li {
+        font-size: 0.9rem;
+      }
+
+      .paypal-button-custom {
+        width: 100%;
+        min-width: 0;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      form img {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="header-logo.png" alt="Remote Life With Littles logo" class="logo">
-    <h1>Remote Life With Littles</h1>
-    <p>Helping parents find real remote jobs, improve their resumes, and feel more confident applying.</p>
-  </header>
+  <main class="popup-card">
 
-  <main>
-    <section class="payment-card">
+    <h1>No Phone Jobs Resume Template</h1>
 
-      <img src="laptop-icon.png" alt="Laptop icon" class="icon">
+    <p class="subtitle">
+      Built for chat support, email support, data entry, backend work, and non-phone remote roles.
+    </p>
 
-      <h2>No Phone Jobs Resume Template</h2>
+    <div class="price">$15</div>
 
-      <p>
-        Perfect for chat support, email support, data entry, and back-office remote roles.
-      </p>
-
-      <div class="price">$15</div>
-
-      <div class="includes">
-        <h3>What You’ll Receive:</h3>
-        <ul>
-          <li>No Phone Jobs Resume Template — editable Word document</li>
-          <li>ATS No Phone Jobs Resume Guide — PDF guide</li>
-          <li>Keyword ideas for chat, email, data entry, and back-office roles</li>
-          <li>A clean, simple layout that is easy to customize</li>
-        </ul>
-      </div>
-
-      <p>Complete your payment securely through PayPal below.</p>
-
-      <div class="paypal-box">
-        <div>
-          <style>
-            .pp-CJ3RGZGMAZRBL {
-              text-align: center;
-              border: none;
-              border-radius: 0.25rem;
-              min-width: 11.625rem;
-              padding: 0 2rem;
-              height: 2.625rem;
-              font-weight: bold;
-              background-color: #FFD140;
-              color: #000000;
-              font-family: "Helvetica Neue", Arial, sans-serif;
-              font-size: 1rem;
-              line-height: 1.25rem;
-              cursor: pointer;
-            }
-          </style>
-
-          <form action="https://www.paypal.com/ncp/payment/CJ3RGZGMAZRBL" method="post" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-            <input class="pp-CJ3RGZGMAZRBL" type="submit" value="Buy Now" />
-            <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Debit and credit cards" />
-            <section style="font-size: 0.75rem;">
-              Powered by
-              <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:0.875rem;vertical-align:middle;" />
-            </section>
-          </form>
-        </div>
-      </div>
-
-      <p class="small-note">
-        After checkout, PayPal will redirect you to your No Phone Jobs template download page.
-      </p>
-
-      <a href="resume-templates.html" class="back-link">← Back to Resume Templates</a>
-
+    <section class="includes">
+      <h2>What You’ll Receive:</h2>
+      <ul>
+        <li>No Phone Jobs Resume Template — editable Word document</li>
+        <li>ATS No Phone Jobs Resume Guide — PDF guide</li>
+        <li>Keyword ideas for chat, email, data entry, and backend roles</li>
+        <li>A clean, simple layout that is easy to customize</li>
+      </ul>
     </section>
-  </main>
 
-  <footer>
-    Made for parents chasing flexibility and freedom
-  </footer>
+    <p class="pay-text">Complete your payment securely through PayPal.</p>
+
+    <div class="paypal-wrap">
+      <form action="https://www.paypal.com/ncp/payment/CJ3RGZGMAZRBL" method="post" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+        <input class="paypal-button-custom" type="submit" value="Buy Now" />
+        <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Debit and credit cards" />
+        <section style="font-size: 0.75rem;">
+          Powered by
+          <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:0.875rem;vertical-align:middle;" />
+        </section>
+      </form>
+    </div>
+
+    <p class="small-note">
+      After checkout, PayPal will redirect you to your No Phone Jobs template download page.
+    </p>
+
+    <a href="resume-help.html" class="back-link">
+      ← Back to Resume Help
+    </a>
+
+  </main>
 
 </body>
 </html>
