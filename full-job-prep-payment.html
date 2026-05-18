@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Full Job Prep Package Payment</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{--navy:#173B72;--soft-blue:#E9F0F8;--light-blue:#F5F8FC;--border:#dfeaf7;--pink:#EC4899;--pink-dark:#DB2777;--green:#7FB069;--green-dark:#5f914d;--text:#334155;--muted:#64748b;--white:#fff;--paypal-yellow:#FFD140;}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:"Inter",Arial,sans-serif;background:radial-gradient(circle at top left,rgba(236,72,153,.12),transparent 32%),linear-gradient(180deg,var(--soft-blue),var(--light-blue));color:var(--text);display:flex;align-items:center;justify-content:center;padding:22px}
+.popup-card{width:min(470px,100%);background:var(--white);border:1px solid var(--border);border-radius:24px;padding:26px;box-shadow:0 18px 45px rgba(23,59,114,.14);text-align:center}
+h1{margin:8px 0;color:var(--navy);font-size:1.5rem;line-height:1.25}
+.subtitle{margin:0 auto 16px;color:var(--muted);font-size:.96rem;line-height:1.5}
+.price{display:inline-block;margin:4px 0 18px;padding:8px 18px;border-radius:999px;background:#fff1f7;color:var(--pink-dark);border:1px solid #f9c7dd;font-weight:800}
+.includes{text-align:left;background:#f8fbff;border:1px solid var(--border);border-radius:18px;padding:16px 18px;margin-bottom:18px}
+.includes h2{margin:0 0 8px;color:var(--navy);font-size:1rem}
+.includes ul{margin:0;padding-left:18px}
+.includes li{margin-bottom:7px;font-size:.93rem;line-height:1.45}
+.pay-text{margin:0 0 12px;font-weight:700}
+.paypal-wrap{display:flex;justify-content:center}
+.paypal-button-custom{border:0;border-radius:.45rem;min-width:12rem;padding:0 2rem;height:2.75rem;font-weight:bold;background:var(--paypal-yellow);color:#000;font-size:1rem;cursor:pointer}
+.upload-link{display:block;width:100%;margin-top:16px;padding:13px 16px;border-radius:14px;background:var(--green);color:#fff;text-decoration:none;font-weight:800}
+.upload-link:hover{background:var(--green-dark)}
+.small-note{margin:14px auto 0;color:var(--muted);font-size:.82rem;line-height:1.45}
+.disclaimer{margin-top:14px;padding:12px 14px;background:#fff7fb;border:1px solid #f9c7dd;border-radius:14px;color:var(--muted);font-size:.8rem;line-height:1.45}
+.back-link{display:inline-block;margin-top:18px;color:var(--navy);font-weight:800;font-size:.92rem;text-decoration:none}
+@media(max-width:480px){body{padding:14px;align-items:flex-start}.popup-card{margin-top:14px;padding:22px 16px}form{width:100%}.paypal-button-custom{width:100%}}
+</style>
+</head>
+
+<body>
+<main class="popup-card">
+
+<h1>Full Job Prep Package</h1>
+
+<p class="subtitle">
+Resume revamp, cover letter, LinkedIn optimization, plus interview guidance and support.
+</p>
+
+<div class="price">$50</div>
+
+<section class="includes">
+<h2>What’s Included:</h2>
+<ul>
+<li>ATS-friendly resume revamp</li>
+<li>Customizable remote-job cover letter</li>
+<li>LinkedIn profile wording help</li>
+<li>Interview guidance and job search support</li>
+</ul>
+</section>
+
+<p class="pay-text">Complete your payment securely through PayPal.</p>
+
+<div class="paypal-wrap">
+<form action="https://www.paypal.com/ncp/payment/G86SC7NCAYAEL" method="post" style="display:inline-grid;justify-items:center;gap:.5rem;">
+<input class="paypal-button-custom" type="submit" value="Buy Now" />
+<img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Debit and credit cards" />
+<section style="font-size:.75rem;">Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:.875rem;vertical-align:middle;" /></section>
+</form>
+</div>
+
+<p class="small-note">After payment, PayPal should redirect you to the upload form.</p>
+
+<a href="upload-resume.html" class="upload-link">Already paid? Upload resume + receipt</a>
+
+<div class="disclaimer">
+Please note: I do not guarantee interviews or job placement. I help improve resumes and make job searching easier.
+</div>
+
+<a href="resume-help.html" class="back-link">← Back to Resume Help</a>
+
+</main>
+</body>
+</html>
