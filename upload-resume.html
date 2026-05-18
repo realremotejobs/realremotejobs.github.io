@@ -6,66 +6,145 @@
 
 <title>Upload Resume | Remote Life With Littles</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+:root{
+  --navy:#173B72;
+  --soft-blue:#E9F0F8;
+  --light-blue:#F5F8FC;
+  --border:#dfeaf7;
+  --pink:#EC4899;
+  --pink-dark:#DB2777;
+  --green:#7FB069;
+  --text:#334155;
+  --muted:#64748b;
+  --white:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#E9F0F8;
-color:#173B72;
-padding:20px;
+  margin:0;
+  min-height:100vh;
+  font-family:"Inter", Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(236,72,153,.12), transparent 32%),
+    linear-gradient(180deg, var(--soft-blue), var(--light-blue));
+  color:var(--text);
+  padding:22px;
 }
 
 .container{
-max-width:900px;
-margin:auto;
-background:#fff;
-border-radius:20px;
-padding:24px;
-box-shadow:0 10px 30px rgba(23,59,114,.12);
+  width:min(900px,100%);
+  margin:0 auto;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:26px;
+  box-shadow:0 18px 45px rgba(23,59,114,.14);
 }
 
 h1{
-text-align:center;
+  margin:8px 0 10px;
+  color:var(--navy);
+  font-size:1.7rem;
+  line-height:1.25;
+  text-align:center;
 }
 
 p{
-text-align:center;
-line-height:1.6;
+  max-width:680px;
+  margin:0 auto 20px;
+  color:var(--muted);
+  font-size:.98rem;
+  line-height:1.6;
+  text-align:center;
+}
+
+.form-wrap{
+  width:100%;
+  background:#f8fbff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:10px;
+  overflow:hidden;
+}
+
+iframe{
+  width:100%;
+  min-height:950px;
+  border:0;
+  display:block;
 }
 
 .back-link{
-display:block;
-text-align:center;
-margin-top:20px;
-font-weight:bold;
-color:#EC4899;
-text-decoration:none;
+  display:block;
+  width:fit-content;
+  margin:20px auto 0;
+  color:var(--navy);
+  font-weight:800;
+  font-size:.94rem;
+  text-decoration:none;
+}
+
+.back-link:hover{
+  text-decoration:underline;
+}
+
+@media(max-width:600px){
+  body{
+    padding:14px;
+  }
+
+  .container{
+    padding:18px 12px;
+    border-radius:20px;
+  }
+
+  h1{
+    font-size:1.35rem;
+  }
+
+  p{
+    font-size:.92rem;
+  }
+
+  .form-wrap{
+    padding:4px;
+  }
+
+  iframe{
+    min-height:1050px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<main class="container">
 
 <h1>Upload Your Resume + Payment Receipt</h1>
 
 <p>
-Thank you for your order. Please upload your resume and a screenshot of your payment confirmation below so I can match your order with your request.
+Thank you for your order. Please upload your resume and a screenshot of your PayPal payment confirmation below so I can match your order with your resume request.
 </p>
 
-<iframe
-src="https://form.jotform.com/261313439778061"
-width="100%"
-height="900"
-frameborder="0">
-</iframe>
+<div class="form-wrap">
+  <iframe
+    src="https://form.jotform.com/261313439778061"
+    title="Upload Resume and Payment Receipt Form">
+  </iframe>
+</div>
 
 <a href="resume-help.html" class="back-link">
-Back to Resume Help
+← Back to Resume Help
 </a>
 
-</div>
+</main>
 
 </body>
 </html>
