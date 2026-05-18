@@ -1,7 +1,200 @@
-<a class="download-btn" href="templates/ATS_Customer_Success_Account_Management_Guide.pdf" download>
-  Download ATS Customer Success Guide
-</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<a class="download-btn secondary" href="templates/Customer_Success_Account_Management_Resume_Template.docx" download>
-  Download Customer Success Resume Template
-</a>
+  <title>Download Customer Success Resume Template</title>
+  <meta name="description" content="Download the Customer Success Resume Template and ATS Customer Success Account Management Guide from Remote Life With Littles." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #173B72;
+      --soft-blue: #E9F0F8;
+      --light-blue: #F5F8FC;
+      --border: #dfeaf7;
+      --pink: #EC4899;
+      --pink-dark: #DB2777;
+      --green: #7FB069;
+      --green-dark: #5f914d;
+      --text: #334155;
+      --muted: #64748b;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(236, 72, 153, 0.12), transparent 32%),
+        linear-gradient(180deg, var(--soft-blue), var(--light-blue));
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+    }
+
+    .popup-card {
+      width: min(460px, 100%);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(23, 59, 114, 0.14);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 8px 0 8px;
+      color: var(--navy);
+      font-size: 1.45rem;
+      line-height: 1.25;
+    }
+
+    .subtitle {
+      margin: 0 auto 18px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.5;
+    }
+
+    .download-box {
+      text-align: left;
+      background: #f8fbff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin: 0 0 18px;
+    }
+
+    .download-box h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      margin: 12px 0;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: var(--pink);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.95rem;
+      transition: 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background: var(--pink-dark);
+      transform: translateY(-1px);
+    }
+
+    .download-btn.secondary {
+      background: var(--green);
+    }
+
+    .download-btn.secondary:hover {
+      background: var(--green-dark);
+    }
+
+    .small-note {
+      margin: 14px auto 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 18px;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 14px;
+        align-items: flex-start;
+      }
+
+      .popup-card {
+        margin-top: 14px;
+        padding: 22px 16px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 1.28rem;
+      }
+
+      .subtitle {
+        font-size: 0.92rem;
+      }
+
+      .download-box {
+        padding: 14px;
+      }
+
+      .download-btn {
+        font-size: 0.9rem;
+        padding: 13px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="popup-card">
+
+    <h1>Your Customer Success Downloads</h1>
+
+    <p class="subtitle">
+      Thank you for your purchase! Download both files below and save them to your computer or phone.
+    </p>
+
+    <section class="download-box">
+      <h2>Your Files</h2>
+
+      <a class="download-btn" href="templates/ATS_Customer_Success_Account_Management_Guide.pdf" download>
+        Download ATS Customer Success & Account Management Guide
+      </a>
+
+      <a class="download-btn secondary" href="templates/Customer_Success_Account_Management_Resume_Template.docx" download>
+        Download Customer Success Resume Template
+      </a>
+    </section>
+
+    <p class="small-note">
+      Tip: The Word document is editable, so you can customize it with your own work history, skills, and remote job keywords.
+    </p>
+
+    <a href="resume-help.html" class="back-link">
+      ← Back to Resume Help
+    </a>
+
+  </main>
+
+</body>
+</html>
