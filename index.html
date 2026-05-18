@@ -5,42 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Remote Life With Littles</title>
 
-  
-<meta name="description" content="Remote Life With Littles shares legit remote work from home jobs, beginner-friendly roles, no-phone jobs, customer support jobs, and resume help for moms and remote job seekers.">
-
-<meta name="keywords" content="remote jobs, work from home jobs, remote jobs for moms, beginner friendly remote jobs, no phone remote jobs, customer support jobs, resume help">
-
+<meta name="description" content="Remote Life With Littles shares legit remote work from home jobs, beginner-friendly roles, no-phone jobs, customer support jobs, healthcare support jobs, customer success jobs, education jobs, and resume help for moms and remote job seekers.">
+<meta name="keywords" content="remote jobs, work from home jobs, remote jobs for moms, beginner friendly remote jobs, no phone remote jobs, customer support jobs, healthcare support jobs, customer success jobs, resume help">
 <meta name="robots" content="index, follow">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
 
 <style>
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
+:root {
+  --navy:#173B72;
+  --pink:#EC4F86;
+  --pink-soft:#FFF0F6;
+  --blue-soft:#E9F0F8;
+  --blue-light:#F5F9FF;
+  --border:#c9dcf4;
+  --border-light:#dfeaf7;
+  --muted:#51657e;
+  --green:#7FB069;
+}
+
+body {
   margin:0;
   font-family:'Inter', Arial, sans-serif;
   background:#FFFFFF;
-  color:#173B72;
+  color:var(--navy);
   line-height:1.5;
 }
 
-img{
+img {
   max-width:100%;
   display:block;
 }
 
-header{
+a {
+  color:inherit;
+}
+
+header {
   background:#E9F0F8;
   padding:0;
   text-align:center;
   line-height:0;
 }
 
-.header-logo{
+.header-logo {
   width:90%;
   max-width:1000px;
   height:auto;
@@ -48,335 +62,548 @@ header{
   margin:auto;
 }
 
-.container{
-  max-width:1120px;
+.container {
+  max-width:1500px;
   margin:0 auto;
-  padding:14px 20px 18px;
+  padding:14px 34px 24px;
+}
+
+.hero-text {
+  text-align:center;
+  padding:22px 20px 10px;
+}
+
+.hero-text h1 {
+  margin:0 0 8px;
+  color:var(--navy);
+  font-size:34px;
+  line-height:1.15;
+  font-weight:800;
+}
+
+.hero-text p {
+  max-width:850px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.6;
 }
 
 .promo-strip,
 .filter-card,
-.category-card{
+.category-card,
+.jobs-panel,
+.collapsed-category,
+.email-card {
   background:#FFFFFF;
-  border:1px solid #dfeaf7;
-  border-radius:16px;
-  box-shadow:0 6px 18px rgba(74,111,165,0.10);
+  border:2px solid var(--border);
+  color:var(--navy);
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(23,59,114,0.06);
 }
 
-.promo-strip{
-  padding:20px 24px;
+.promo-strip {
+  padding:18px 26px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:22px;
-  margin-bottom:24px;
+  margin-bottom:12px;
 }
 
-.promo-left{
+.promo-left {
   display:flex;
   align-items:center;
   gap:18px;
   min-width:0;
 }
 
-.promo-icon-img{
-  width:78px;
-  height:78px;
+.promo-icon-img {
+  width:62px;
+  height:62px;
   object-fit:contain;
   flex-shrink:0;
 }
 
 .promo-text h2,
-.promo-text h3{
-  font-family:'Patrick Hand', cursive;
-  font-weight:400;
-  color:#173B72;
-  font-size:32px;
+.promo-text h3 {
+  margin:0 0 4px;
+  color:var(--navy);
+  font-size:25px;
   line-height:1.05;
-  margin:0 0 5px;
+  font-weight:800;
 }
 
-.promo-text p{
+.promo-text p {
   margin:0;
-  color:#173B72;
+  color:var(--navy);
+  font-size:15px;
+  font-weight:500;
+}
+
+.promo-btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  background:var(--pink);
+  color:#FFFFFF !important;
+  text-decoration:none;
+  padding:15px 28px;
+  border-radius:9px;
+  font-weight:800;
   font-size:16px;
+  min-width:170px;
+  white-space:nowrap;
+  border:1px solid var(--pink);
+  transition:.2s ease;
 }
 
-/* PROMO BUTTON */
-.promo-btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-background:#4A6FA5;
-color:#FFFFFF !important;
-text-decoration:none;
-padding:14px 24px;
-border-radius:10px;
-font-weight:800;
-font-size:18px;
-min-width:170px;
-white-space:nowrap;
-border:1px solid #3d6296;
-transition:.2s ease;
+.promo-btn:hover {
+  filter:brightness(.96);
+  transform:translateY(-1px);
 }
 
-.promo-btn:hover{
-background:#3f6294;
-color:#FFFFFF !important;
-text-decoration:none;
-transform:translateY(-1px);
+.filter-card {
+  padding:18px 24px;
+  margin-bottom:18px;
 }
 
-/* FREE TEMPLATE GREEN BUTTON */
-.download-btn{
-background:#7FB069;
-border-color:#6da75b;
-}
-
-.download-btn:hover{
-background:#6da75b;
-color:#FFFFFF !important;
-}
-
-.filter-card{
-  padding:22px;
-  margin-bottom:28px;
-}
-
-.filter-row{
+.filter-row {
   display:grid;
-  grid-template-columns:240px 1fr 1fr 1.3fr;
-  gap:16px;
+  grid-template-columns:180px 1fr 1fr 1fr 1.65fr;
+  gap:18px;
   align-items:center;
 }
 
-.filter-label{
+.filter-label {
   display:flex;
   align-items:center;
   gap:12px;
-  font-family:'Patrick Hand', cursive;
-  font-size:32px;
-  color:#173B72;
+  font-size:19px;
+  color:var(--navy);
+  font-weight:800;
   white-space:nowrap;
 }
 
-.filter-icon-img{
-  width:58px;
-  height:58px;
+.filter-icon-img {
+  min-width:58px;
+  height:34px;
   object-fit:contain;
   flex-shrink:0;
 }
 
 .filter-row select,
-.filter-row input{
+.filter-row input {
   width:100%;
-  height:48px;
-  border:1px solid #cfddef;
-  border-radius:10px;
+  height:50px;
+  border:2px solid var(--border-light);
+  border-radius:9px;
   background:#FFFFFF;
-  color:#173B72;
-  font-size:15px;
-  padding:0 14px;
+  color:var(--navy);
+  font-size:14px;
+  padding:0 16px;
   font-family:'Inter', Arial, sans-serif;
+  font-weight:700;
+  outline:none;
   transition:.2s ease;
 }
 
 .filter-row select:hover,
-.filter-row input:hover{
-  border-color:#4A6FA5;
+.filter-row input:hover,
+.filter-row select:focus,
+.filter-row input:focus {
+  border-color:var(--border);
 }
 
-.filter-row input::placeholder{
+.filter-row input::placeholder {
   color:#51657e;
 }
 
-.group-grid{
+.category-grid {
   display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:20px;
+  grid-template-columns:repeat(6, 1fr);
+  gap:16px;
+  margin-bottom:20px;
 }
 
-.category-card{
-  padding:20px;
+.category-card {
+  min-height:250px;
+  padding:20px 16px 18px;
+  position:relative;
   display:flex;
   flex-direction:column;
-  height:100%;
-}
-
-.category-heading{
-  display:flex;
   align-items:center;
-  gap:14px;
-  margin-bottom:16px;
-  flex-grow:1;
+  justify-content:center;
+  text-align:center;
+  gap:9px;
 }
 
-.view-listings-btn{
-  margin-top:auto;
-}
-
-.category-heading{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  margin-bottom:16px;
-}
-
-.category-icon-img{
-  width:78px;
-  height:78px;
-  object-fit:contain;
-  flex-shrink:0;
-}
-
-.category-card h3{
-  font-family:'Patrick Hand', cursive;
-  font-size:30px;
-  font-weight:400;
-  color:#173B72;
-  line-height:1.05;
-  margin:0;
-}
-
-.category-subtitle{
-  margin-top:6px;
-  color:#0047A3;
-  font-size:16px;
-  font-weight:600;
-}
-
-.view-listings-btn{
-  width:100%;
-  border:1px solid #c9dcf4;
-  background:#eef5ff;
-  color:#0047A3;
-  border-radius:10px;
-  padding:12px 14px;
+.category-arrow {
+  position:absolute;
+  top:18px;
+  right:18px;
+  color:var(--navy);
+  font-size:26px;
   font-weight:800;
-  font-size:16px;
+}
+
+.category-icon-img {
+  width:86px;
+  height:86px;
+  object-fit:contain;
+  margin-bottom:2px;
+}
+
+.category-card h3 {
+  margin:0;
+  font-size:20px;
+  font-weight:800;
+  color:var(--navy);
+  line-height:1.18;
+}
+
+.category-card p {
+  margin:0;
+  color:var(--navy);
+  font-size:15px;
+  font-weight:500;
+}
+
+.view-listings-btn {
+  width:82%;
+  border:1px solid #e5eefb;
+  background:#edf5ff;
+  color:#0047A3;
+  border-radius:8px;
+  padding:10px 12px;
+  font-weight:800;
+  font-size:15px;
   cursor:pointer;
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   gap:10px;
+  margin-top:6px;
 }
 
-.view-listings-btn:hover{
+.view-listings-btn:hover {
   background:#e5f0ff;
 }
 
-.toggle-section{
-  display:none;
+.jobs-panel {
+  border-color:#ffd1df;
+  overflow:hidden;
+  margin-bottom:8px;
 }
 
-.toggle-section.show{
-  display:block;
-}
-
-.listing-list{
-  display:grid;
-  gap:12px;
-  margin-top:14px;
-}
-
-.listing-row{
-  background:#f8fbff;
-  border:1px solid #dfeaf7;
-  border-radius:12px;
-  padding:14px;
-}
-
-.job-title{
-  color:#173B72;
-  font-weight:800;
-  margin-bottom:5px;
-  font-size:15px;
-}
-
-.company-name{
-  color:#4A6FA5;
-  font-weight:800;
-  margin-bottom:5px;
-  font-size:14px;
-}
-
-.listing-meta{
-  color:#51657e;
-  font-size:13px;
-  line-height:1.45;
-  margin-bottom:10px;
-}
-
-.job-actions{
+.panel-head {
+  background:linear-gradient(90deg, #fff4f8 0%, #ffffff 100%);
+  border-bottom:2px solid #ffd8e5;
+  min-height:64px;
+  padding:14px 22px;
   display:flex;
   align-items:center;
-  gap:10px;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.panel-title-wrap {
+  display:flex;
+  align-items:center;
+  gap:18px;
   flex-wrap:wrap;
 }
 
-.apply-btn{
+.panel-icon {
+  width:58px;
+  height:58px;
+  object-fit:contain;
+}
+
+.panel-head h2 {
+  margin:0;
+  font-size:25px;
+  color:var(--navy);
+  font-weight:800;
+}
+
+.pill {
+  background:#ffe6f0;
+  color:var(--navy);
+  border-radius:999px;
+  padding:8px 17px;
+  font-size:14px;
+  font-weight:800;
+}
+
+.hide-btn {
+  background:#FFFFFF;
+  border:2px solid #e7eef8;
+  color:var(--navy);
+  border-radius:9px;
+  padding:12px 24px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.panel-body {
+  padding:16px 20px 18px;
+}
+
+.toolbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:14px;
+}
+
+.sort-wrap {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  font-size:14px;
+  font-weight:800;
+}
+
+.sort-wrap select {
+  height:44px;
+  width:205px;
+  border:2px solid var(--border-light);
+  border-radius:9px;
+  color:var(--navy);
+  font-weight:700;
+  padding:0 14px;
+}
+
+.view-label {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+}
+
+.view-icon {
+  background:#dcecff;
+  border-radius:8px;
+  padding:9px 14px;
+}
+
+.job-grid {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:12px 16px;
+}
+
+.job-card {
+  background:#FFFFFF;
+  border:2px solid var(--border-light);
+  border-radius:11px;
+  min-height:180px;
+  padding:18px 20px;
+  position:relative;
+  box-shadow:0 5px 12px rgba(23,59,114,.035);
+}
+
+.bookmark {
+  position:absolute;
+  right:18px;
+  top:18px;
+  font-size:22px;
+  color:var(--navy);
+}
+
+.job-title {
+  margin:0 35px 5px 0;
+  color:var(--navy);
+  font-weight:800;
+  font-size:19px;
+  line-height:1.18;
+}
+
+.company-name {
+  color:var(--pink);
+  font-weight:800;
+  margin-bottom:13px;
+  font-size:15px;
+}
+
+.listing-meta {
+  color:#344b72;
+  font-size:14px;
+  line-height:1.5;
+  font-weight:500;
+  margin-bottom:12px;
+}
+
+.job-actions {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.apply-btn {
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  background:#4A6FA5;
-  color:white;
+  background:var(--pink);
+  color:#FFFFFF !important;
   text-decoration:none;
-  border-radius:9px;
-  padding:9px 14px;
+  border-radius:7px;
+  padding:9px 20px;
   font-weight:800;
+  font-size:14px;
+  border:2px solid var(--pink);
+}
+
+.job-toggle-btn {
+  background:#FFFFFF;
+  border:2px solid #9dbbec;
+  color:var(--navy);
+  border-radius:7px;
+  padding:9px 18px;
+  font-weight:800;
+  cursor:pointer;
   font-size:14px;
 }
 
-.apply-btn:hover{
-  background:#3f6294;
-}
-
-.job-toggle-btn{
-  border:none;
-  background:transparent;
-  color:#0047A3;
-  font-weight:800;
-  cursor:pointer;
-  padding:8px 0;
-  font-size:13px;
-}
-
-.job-details{
+.job-details {
   display:none;
-  margin-top:8px;
+  margin-top:12px;
   color:#51657e;
-  font-size:13px;
-  line-height:1.55;
+  font-size:14px;
+  line-height:1.6;
+  border-top:1px solid var(--border-light);
+  padding-top:10px;
 }
 
-.job-details.show{
+.job-details.show {
   display:block;
 }
 
-.empty-message{
-  grid-column:1 / -1;
-  background:#FFFFFF;
-  border:1px solid #dfeaf7;
-  border-radius:16px;
-  box-shadow:0 6px 18px rgba(74,111,165,0.10);
-  padding:26px;
-  text-align:center;
-  color:#51657e;
-  font-weight:600;
+.jobs-panel.is-hidden .panel-body {
+  display:none;
 }
 
-.template-strip{
-  margin-top:24px;
+.load-more {
+  width:min(680px,100%);
+  margin:12px auto 0;
+  display:block;
+  min-height:36px;
+  border:0;
+  border-radius:8px;
+  background:linear-gradient(90deg,#f2f7ff,#eef6ff);
+  color:var(--navy);
+  font-size:16px;
+  font-weight:800;
+  cursor:pointer;
 }
 
-footer{
+.collapsed-list {
+  display:grid;
+  gap:5px;
+  margin-bottom:22px;
+}
+
+.collapsed-category {
+  min-height:46px;
+  border-color:var(--border-light);
+  border-radius:9px;
+  padding:5px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+}
+
+.collapsed-left {
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.small-icon {
+  width:42px;
+  height:42px;
+  object-fit:contain;
+}
+
+.collapsed-category h3 {
+  margin:0;
+  font-size:18px;
+  min-width:230px;
+}
+
+.collapsed-category span {
+  font-size:14px;
+}
+
+.email-card {
+  margin:20px 0 24px;
+  padding:24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:22px;
+  background:linear-gradient(90deg,#ffffff 0%,#fff7fb 100%);
+}
+
+.email-card h2 {
+  margin:0 0 6px;
+  font-size:26px;
+  font-weight:800;
+}
+
+.email-card p {
+  margin:0;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.email-form {
+  display:flex;
+  gap:10px;
+  min-width:420px;
+}
+
+.email-form input {
+  height:50px;
+  flex:1;
+  border:2px solid var(--border);
+  border-radius:9px;
+  padding:0 14px;
+  color:var(--navy);
+}
+
+.email-form button {
+  height:50px;
+  border:0;
+  border-radius:9px;
+  background:var(--pink);
+  color:#fff;
+  font-weight:800;
+  padding:0 22px;
+  cursor:pointer;
+}
+
+.template-strip {
+  margin-top:0;
+}
+
+.download-btn {
+  background:var(--green);
+  border-color:var(--green);
+}
+
+footer {
   background:#E9F0F8;
   padding:8px 20px;
   border-top:1px solid rgba(23,59,114,.08);
 }
 
-.footer-wrap{
+.footer-wrap {
   max-width:760px;
   margin:0 auto;
   display:flex;
@@ -385,108 +612,398 @@ footer{
   gap:160px;
 }
 
-.footer-banner{
+.footer-banner {
   width:260px;
   height:auto;
   display:block;
 }
 
-.copyright{
+.copyright {
   margin:0;
   font-size:13px;
   color:#173B72;
   white-space:nowrap;
 }
 
-@media (max-width:1000px){
-  .group-grid{
-    grid-template-columns:repeat(2, 1fr);
-  }
+.empty-message {
+  grid-column:1 / -1;
+  background:#FFFFFF;
+  border:2px solid var(--border-light);
+  border-radius:14px;
+  padding:26px;
+  text-align:center;
+  color:#51657e;
+  font-weight:700;
+}
 
-  .filter-row{
+@media (max-width:1180px) {
+  .filter-row {
     grid-template-columns:1fr 1fr;
   }
 
-  .filter-label{
+  .filter-label {
     grid-column:1 / -1;
-    justify-content:flex-start;
   }
 
-  #searchFilter{
+  #searchFilter {
     grid-column:1 / -1;
+  }
+
+  .category-grid {
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .job-grid {
+    grid-template-columns:repeat(2,1fr);
   }
 }
 
-@media (max-width:700px){
-  .container{
-    padding:14px 14px 14px;
+@media (max-width:800px) {
+  .container {
+    padding:14px;
   }
 
-  .promo-strip{
-    flex-direction:column;
-    text-align:center;
-    padding:20px;
-  }
-
-  .promo-left{
-    flex-direction:column;
-  }
-
-  .promo-text h2,
-  .promo-text h3{
+  .hero-text h1 {
     font-size:28px;
   }
 
-  .promo-btn{
+  .promo-strip,
+  .email-card {
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .promo-left {
+    flex-direction:column;
+  }
+
+  .promo-btn,
+  .email-form,
+  .email-form button {
     width:100%;
   }
 
-  .filter-row{
-    grid-template-columns:1fr 1fr;
-    gap:12px;
+  .email-form {
+    min-width:0;
+    flex-direction:column;
   }
 
- .filter-label{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:16px;
-font-family:'Patrick Hand', cursive;
-font-size:32px;
-color:#173B72;
-white-space:nowrap;
-padding:0 10px;
-text-align:center;
-}
-
-  .filter-icon-img{
-    width:52px;
-    height:52px;
-  }
-
-  #searchFilter{
-    grid-column:1 / -1;
-  }
-
-  .group-grid{
+  .filter-row {
     grid-template-columns:1fr;
   }
 
-  .category-heading{
-    align-items:center;
+  .filter-label {
+    justify-content:center;
   }
 
-  .category-card h3{
-    font-size:28px;
+  .category-grid {
+    grid-template-columns:1fr;
   }
 
-  .footer-wrap{
+  .job-grid {
+    grid-template-columns:1fr;
+  }
+
+  .panel-head,
+  .toolbar {
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .collapsed-category {
+    padding:8px 14px;
+  }
+
+  .collapsed-left {
+    gap:10px;
+  }
+
+  .collapsed-category h3 {
+    min-width:0;
+    font-size:16px;
+  }
+
+  .footer-wrap {
     flex-direction:column;
     gap:8px;
   }
 
-  .footer-banner{
+  .footer-banner {
     width:240px;
+  }
+}
+
+
+/* ===== VIRAL JOB CARD + MOBILE CLEANUP UPDATES ===== */
+.featured-tag {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:#FFF0F6;
+  border:1px solid #ffd1df;
+  color:var(--navy);
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.job-card {
+  overflow:hidden;
+  transition:.22s ease;
+}
+
+.job-card::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:5px;
+  background:linear-gradient(90deg, var(--pink), #ffd1df, #E9F0F8);
+}
+
+.job-card:hover {
+  transform:translateY(-3px);
+  border-color:#ffd1df;
+  box-shadow:0 14px 28px rgba(23,59,114,.10);
+}
+
+.bookmark {
+  border:0;
+  background:#fff7fb;
+  min-width:58px;
+  height:34px;
+  border-radius:999px;
+  padding:0 12px;
+  font-size:12px;
+  font-weight:900;
+  color:var(--pink);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.2s ease;
+}
+
+.bookmark:hover,
+.bookmark.is-saved {
+  background:var(--pink);
+  color:#fff;
+}
+
+.badge-row {
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:0 42px 10px 0;
+}
+
+.job-badge {
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:12px;
+  font-weight:900;
+  background:#edf5ff;
+  color:#173B72;
+  border:1px solid #d7e7fb;
+}
+
+.job-badge.pink {
+  background:#FFF0F6;
+  border-color:#ffd1df;
+}
+
+.job-badge.green {
+  background:#eef8ef;
+  border-color:#cfe6cf;
+}
+
+.job-badge.gold {
+  background:#fff8e8;
+  border-color:#f6dfac;
+}
+
+.quick-why {
+  margin:10px 0 13px;
+  background:#F8FBFF;
+  border:1px solid var(--border-light);
+  border-radius:9px;
+  padding:10px 12px;
+  color:#344b72;
+  font-size:13.5px;
+  font-weight:650;
+}
+
+.saved-jobs-note {
+  margin:0 0 12px;
+  color:#51657e;
+  font-size:13px;
+  font-weight:700;
+}
+
+.blog-preview {
+  margin:20px 0 26px;
+}
+
+.blog-preview-head {
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:16px;
+  margin-bottom:12px;
+}
+
+.blog-preview h2 {
+  margin:0;
+  font-size:28px;
+  font-weight:900;
+}
+
+.blog-preview p {
+  margin:4px 0 0;
+  color:var(--muted);
+}
+
+.blog-grid {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:14px;
+}
+
+.blog-card {
+  background:#FFFFFF;
+  border:2px solid var(--border);
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 8px 20px rgba(23,59,114,0.06);
+  text-decoration:none;
+  transition:.2s ease;
+}
+
+.blog-card:hover {
+  transform:translateY(-2px);
+  border-color:#ffd1df;
+}
+
+.blog-pill {
+  display:inline-flex;
+  background:#FFF0F6;
+  color:var(--navy);
+  border-radius:999px;
+  padding:6px 10px;
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.blog-card h3 {
+  margin:0 0 8px;
+  font-size:19px;
+  line-height:1.2;
+}
+
+.blog-card p {
+  font-size:14px;
+  margin:0 0 12px;
+}
+
+.blog-link {
+  color:var(--pink);
+  font-weight:900;
+}
+
+@media (max-width:800px) {
+  header {
+    padding:4px 0;
+  }
+
+  .header-logo {
+    width:100%;
+  }
+
+  .hero-text {
+    padding:18px 16px 8px;
+  }
+
+  .hero-text h1 {
+    font-size:25px;
+  }
+
+  .hero-text p {
+    font-size:15px;
+  }
+
+  .filter-card,
+  .promo-strip,
+  .email-card,
+  .jobs-panel,
+  .category-card,
+  .blog-card {
+    border-radius:16px;
+  }
+
+  .filter-card {
+    padding:16px;
+  }
+
+  .filter-row select,
+  .filter-row input {
+    height:48px;
+    font-size:15px;
+  }
+
+  .category-card {
+    min-height:auto;
+    padding:18px 14px;
+  }
+
+  .category-icon-img {
+    width:70px;
+    height:70px;
+  }
+
+  .panel-head h2 {
+    font-size:21px;
+  }
+
+  .panel-body {
+    padding:12px;
+  }
+
+  .job-card {
+    padding:17px 15px;
+    min-height:auto;
+  }
+
+  .job-title {
+    font-size:18px;
+  }
+
+  .badge-row {
+    margin-right:36px;
+  }
+
+  .job-actions {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+
+  .apply-btn,
+  .job-toggle-btn {
+    width:100%;
+    padding:10px 8px;
+  }
+
+  .blog-preview-head {
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .blog-grid {
+    grid-template-columns:1fr;
   }
 }
 
@@ -499,88 +1016,116 @@ text-align:center;
   <img src="images/header-logo.png" class="header-logo" alt="Remote Life With Littles">
 </header>
 
-<section class="seo-text" style="text-align:center; padding:20px 20px 0;">
-  <h1 style="font-size:32px; color:#173B72; margin-bottom:10px;">
-    Legit Remote Jobs for Moms and Work From Home Job Seekers
-  </h1>
-
-  <p style="max-width:900px; margin:auto; color:#51657e; font-size:16px; line-height:1.6;">
-    Find beginner-friendly remote jobs, customer support roles, no-phone jobs, healthcare support jobs, and resume help for remote job seekers.
-  </p>
+<section class="hero-text">
+  <h1>Legit Remote Jobs for Moms &amp; WFH Job Seekers</h1>
+  <p>Beginner-friendly remote jobs, resume help, and career growth resources — from customer service to customer success.</p>
 </section>
 
 <main class="container">
 
   <section class="promo-strip" aria-label="Resume help">
     <div class="promo-left">
-      <img src="images/resume-icon.png" class="promo-icon-img" alt="">
+      <img src="images/health-support.png" class="promo-icon-img" alt="">
       <div class="promo-text">
         <h2>Need Help Getting Interviews?</h2>
         <p>Get a clean, ATS-friendly resume for remote jobs.</p>
       </div>
     </div>
 
-   <a href="resume-help.html" class="promo-btn">Resume Help →</a>
+    <a href="resume-help.html" class="promo-btn">Resume Help →</a>
   </section>
 
   <section class="filter-card" aria-label="Job filters">
     <div class="filter-row">
       <div class="filter-label">
-        <img src="images/filter-icon.png" class="filter-icon-img" alt="">
-        <span>Select Filter</span>
+        <span style="font-size:28px;">▽</span>
+        <span>Select Filter:</span>
       </div>
 
       <select id="categoryFilter" aria-label="Filter by category">
         <option value="all">All Categories</option>
       </select>
 
-      <select id="locationFilter">
-<option value="all">All Locations</option>
+      <select id="locationFilter" aria-label="Filter by location">
+        <option value="all">All Locations</option>
+        <option value="United States">United States</option>
+        <option value="International">International</option>
+        <option value="Worldwide">Worldwide</option>
+        <option value="Hybrid">Hybrid</option>
+      </select>
 
-<option value="United States">United States</option>
-<option value="Canada">Canada</option>
-
-<option value="Brazil">Brazil</option>
-<option value="Estonia">Estonia</option>
-<option value="India">India</option>
-<option value="Hungary">Hungary</option>
-<option value="Japan">Japan</option>
-<option value="United Kingdom">United Kingdom</option>
-
-<option value="London">London</option>
-<option value="São Paulo">São Paulo</option>
-<option value="Tallinn">Tallinn</option>
-<option value="Hyderabad">Hyderabad</option>
-<option value="Budapest">Budapest</option>
-<option value="Tokyo">Tokyo</option>
-
-<option value="Remote">Remote</option>
-<option value="Hybrid">Hybrid</option>
-
-<option value="International">International</option>
-</select>
+      <select id="jobTypeFilter" aria-label="Filter by job type">
+        <option value="all">All Job Types</option>
+        <option value="Full-Time">Full-Time</option>
+        <option value="Part-Time">Part-Time</option>
+        <option value="Contract">Contract</option>
+        <option value="Freelance">Freelance</option>
+        <option value="Flexible Hours">Flexible Hours</option>
+      </select>
 
       <input id="searchFilter" type="text" placeholder="Search title or company..." aria-label="Search title or company">
     </div>
   </section>
 
-  <section id="categoryGroups" class="group-grid" aria-label="Remote job categories"></section>
+  <section id="categoryCards" class="category-grid" aria-label="Remote job categories"></section>
 
-  <section class="promo-strip template-strip" aria-label="Free resume template">
-    <div class="promo-left">
-      <img src="images/template-icon.png" class="promo-icon-img" alt="">
-      <div class="promo-text">
-        <h3>Free Resume Template</h3>
-        <p>Free resume template made for remote job seekers.</p>
-      </div>
+  <section id="activeJobsPanel" class="jobs-panel" aria-label="Open job listings"></section>
+
+  <section id="collapsedCategories" class="collapsed-list" aria-label="Collapsed job categories"></section>
+
+  <section class="email-card" aria-label="Email signup">
+    <div>
+      <h2>Get More Remote Job Tips!</h2>
+      <p>Join our email list for weekly job leads, resume tips, and WFH advice.</p>
     </div>
 
-    <a href="Customer_Service_Resume_Template (3).docx" download class="promo-btn download-btn">
-      Download Free Template
-    </a>
+    <!-- MAILERLITE SETUP:
+      1. In MailerLite, open your embedded signup form.
+      2. Copy the form action URL.
+      3. Replace YOUR_MAILERLITE_FORM_ACTION_URL below with that URL.
+      4. Keep name="fields[email]" unless your MailerLite embed gives you a different field name.
+    -->
+    <form class="email-form" action="YOUR_MAILERLITE_FORM_ACTION_URL" method="post" target="_blank">
+      <input type="email" name="fields[email]" placeholder="Your email address" autocomplete="email" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </section>
 
-</main>
+
+  <section class="blog-preview" aria-label="Remote job tips blog preview">
+    <div class="blog-preview-head">
+      <div>
+        <h2>Remote Job Tips From the Blog 🤍</h2>
+        <p>Quick reads to help you apply smarter, clean up your resume, and avoid scams.</p>
+      </div>
+      <a href="blog.html" class="promo-btn">Read Blog →</a>
+    </div>
+
+    <div class="blog-grid">
+      <a href="blog.html" class="blog-card">
+        <span class="blog-pill">Resume Help</span>
+        <h3>How to make your resume look remote-job ready</h3>
+        <p>Simple changes that help your resume look cleaner, easier to scan, and more ATS-friendly.</p>
+        <span class="blog-link">Read more →</span>
+      </a>
+
+      <a href="blog.html" class="blog-card">
+        <span class="blog-pill">Beginner Friendly</span>
+        <h3>Best remote jobs to search for when you’re starting out</h3>
+        <p>Customer support, chat support, data entry, healthcare support, and other realistic entry points.</p>
+        <span class="blog-link">Read more →</span>
+      </a>
+
+      <a href="blog.html" class="blog-card">
+        <span class="blog-pill">Scam Check</span>
+        <h3>Red flags to watch for before applying</h3>
+        <p>What to double-check before sharing personal information or moving forward with a remote job lead.</p>
+        <span class="blog-link">Read more →</span>
+      </a>
+    </div>
+  </section>
+
+  </main>
 
 <footer>
   <div class="footer-wrap">
@@ -588,6 +1133,7 @@ text-align:center;
     <p class="copyright">© 2026 Remote Life With Littles</p>
   </div>
 </footer>
+
 <script>
 /* ============================================
    ONLY UPDATE THE JOB LIST BELOW
@@ -1743,22 +2289,51 @@ const jobs = [
    AUTOMATIC WEBSITE LOGIC
    ============================================ */
 
-const now = new Date();
-const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
-
-const categoryGroupsContainer = document.getElementById("categoryGroups");
+const categoryCardsContainer = document.getElementById("categoryCards");
+const activeJobsPanel = document.getElementById("activeJobsPanel");
+const collapsedCategories = document.getElementById("collapsedCategories");
 const categoryFilter = document.getElementById("categoryFilter");
 const locationFilter = document.getElementById("locationFilter");
+const jobTypeFilter = document.getElementById("jobTypeFilter");
 const searchFilter = document.getElementById("searchFilter");
+const savedJobs = JSON.parse(localStorage.getItem("savedRemoteJobs") || "[]");
 
-const categoryIconMap = {
-  "Customer Support Jobs": "support-icon.png",
-  "No Phone Jobs": "laptop-icon.png",
-  "Customer Success Jobs": "success-icon.png",
-  "Technical & Operations Jobs": "ops-icon.png",
-  "Content & Education Jobs": "education-icon.png",
-  "Member Support Jobs": "member-icon.png"
-};
+const categoryList = [
+  {
+    key:"Customer Service Jobs",
+    match:["Customer Support Jobs"],
+    icon:"support-icon.png"
+  },
+  {
+    key:"No Phone Jobs",
+    match:["No Phone Jobs"],
+    icon:"home-work.png"
+  },
+  {
+    key:"Healthcare Support Jobs",
+    match:["Healthcare Support Jobs"],
+    icon:"health-support.png",
+    healthcare:true
+  },
+  {
+    key:"Tech & Admin Jobs",
+    match:["Technical & Operations Jobs", "Tech & Admin Jobs"],
+    icon:"ops-icon.png"
+  },
+  {
+    key:"Customer Success & Account Mgmt",
+    match:["Customer Success Jobs", "Customer Success & Account Mgmt"],
+    icon:"success-icon.png"
+  },
+  {
+    key:"Education & Content Jobs",
+    match:["Content & Education Jobs", "Education & Content Jobs"],
+    icon:"laptop-icon.png"
+  }
+];
+
+let activeCategory = "Healthcare Support Jobs";
+let visibleCount = 6;
 
 function escapeHTML(value){
   return String(value ?? "")
@@ -1779,15 +2354,30 @@ function formatDate(dateString){
   });
 }
 
-function populateCategoryFilter(){
-  const categories = [...new Set(jobs.map(job => job.category).filter(Boolean))];
+function getJobText(job){
+  return `${job.title || ""} ${job.company || ""} ${job.category || ""} ${job.type || ""} ${job.location || ""} ${job.description || ""} ${job.pay || ""} ${job.schedule || ""}`.toLowerCase();
+}
 
-  categories.forEach(category => {
-    const option = document.createElement("option");
-    option.value = category;
-    option.textContent = category;
-    categoryFilter.appendChild(option);
-  });
+function isHealthcareJob(job){
+  const text = getJobText(job);
+  const healthcareTerms = [
+    "healthcare", "health care", "medical", "medicare", "patient", "pharmacy",
+    "clinical", "billing", "claims", "prior authorization", "insurance",
+    "care coordinator", "member outreach", "devoted", "pillpack", "amazon health",
+    "mood health", "taskus", "ttec", "alorica"
+  ];
+  return healthcareTerms.some(term => text.includes(term));
+}
+
+function getDisplayCategory(job){
+  if(isHealthcareJob(job)) return "Healthcare Support Jobs";
+
+  const found = categoryList.find(cat => cat.match.includes(job.category));
+  return found ? found.key : job.category;
+}
+
+function getCategoryConfig(displayCategory){
+  return categoryList.find(cat => cat.key === displayCategory) || categoryList[0];
 }
 
 function getJobLocationText(job){
@@ -1797,206 +2387,387 @@ function getJobLocationText(job){
 function isInternationalJob(job){
   const text = getJobLocationText(job).toLowerCase();
 
-  const usTerms = [
-    "united states", "usa", " u.s.", " us ", "remote us", "remote (us",
-    "tx", "ca", "fl", "ga", "la", "ms", "ok", "tn", "nv", "az", "ut",
-    "wa", "or", "id", "mt", "wy", "nm", "co", "oh", "nc", "mo", "il"
-  ];
-
   const internationalTerms = [
-    "international", "global", "canada", "philippines", "ireland",
-    "germany", "singapore", "colombia", "apac", "dublin",
-    "brazil", "estonia", "india", "hungary", "japan", "united kingdom",
-    "london", "são paulo", "tallinn", "hyderabad", "budapest", "tokyo", "worldwide"
+    "international", "global", "worldwide", "canada", "philippines", "ireland",
+    "germany", "singapore", "colombia", "apac", "dublin", "brazil", "estonia",
+    "india", "hungary", "japan", "united kingdom", "london", "são paulo",
+    "tallinn", "hyderabad", "budapest", "tokyo"
   ];
 
-  if(internationalTerms.some(term => text.includes(term))) return true;
-  if(usTerms.some(term => text.includes(term))) return false;
+  return internationalTerms.some(term => text.includes(term));
+}
 
-  return false;
+function matchesLocation(job, selectedLocation){
+  const selected = selectedLocation.toLowerCase();
+  const text = getJobLocationText(job).toLowerCase();
+
+  if(selected === "all") return true;
+
+  if(selected === "united states") {
+    const unitedStatesTerms = [
+      "united states", "usa", "u.s.", "us ", " us", "remote us", "remote - us",
+      "remote — us", "remote usa", "remote u.s.", "select u.s. states", "select states",
+      "arizona", "california", "colorado", "florida", "georgia", "idaho", "montana",
+      "nevada", "new mexico", "oregon", "texas", "utah", "washington", "wyoming"
+    ];
+    return unitedStatesTerms.some(term => text.includes(term));
+  }
+
+  if(selected === "international") return isInternationalJob(job);
+
+  if(selected === "worldwide") {
+    return text.includes("worldwide") || text.includes("global") || text.includes("international");
+  }
+
+  if(selected === "hybrid") return text.includes("hybrid");
+
+  return text.includes(selected);
+}
+
+function matchesJobType(job, selectedType){
+  const selected = selectedType.toLowerCase();
+  const text = getJobText(job);
+
+  if(selected === "all") return true;
+  if(selected === "full-time") return text.includes("full-time") || text.includes("full time") || text.includes("fulltime");
+  if(selected === "part-time") return text.includes("part-time") || text.includes("part time") || text.includes("parttime");
+  if(selected === "contract") return text.includes("contract") || text.includes("contract-to-hire");
+  if(selected === "freelance") return text.includes("freelance") || text.includes("1099");
+  if(selected === "flexible hours") return text.includes("flexible") || text.includes("work anytime") || text.includes("set your own");
+
+  return text.includes(selected);
 }
 
 function getFilteredJobs(){
   const selectedCategory = categoryFilter.value;
-  const selectedLocation = locationFilter.value.toLowerCase();
+  const selectedLocation = locationFilter.value;
+  const selectedType = jobTypeFilter.value;
   const searchText = searchFilter.value.toLowerCase().trim();
 
   return jobs.filter(job => {
-    const matchesStatus = ["open", "hiring now", "now hiring"].includes(String(job.status || "").toLowerCase());
+    const status = String(job.status || "").toLowerCase();
+    const matchesStatus = ["open", "hiring now", "now hiring"].includes(status);
+
+    const displayCategory = getDisplayCategory(job);
 
     const matchesCategory =
       selectedCategory === "all" ||
-      job.category === selectedCategory;
+      displayCategory === selectedCategory;
 
-    const locationText = getJobLocationText(job).toLowerCase();
-
-    let matchesLocation = true;
-
-    if(selectedLocation !== "all"){
-      if(selectedLocation === "international"){
-        matchesLocation = isInternationalJob(job);
-      } else {
-        matchesLocation = locationText.includes(selectedLocation);
-      }
-    }
-
-    const searchableText = `${job.title || ""} ${job.company || ""} ${job.category || ""} ${job.type || ""} ${job.location || ""} ${job.description || ""}`.toLowerCase();
+    const searchableText = getJobText(job);
 
     const matchesSearch =
       searchText === "" ||
       searchableText.includes(searchText);
 
-    return matchesStatus && matchesCategory && matchesLocation && matchesSearch;
+    return matchesStatus &&
+      matchesCategory &&
+      matchesLocation(job, selectedLocation) &&
+      matchesJobType(job, selectedType) &&
+      matchesSearch;
   });
 }
 
-function groupJobsByCategory(jobArray){
-  const grouped = {};
+function getJobsForDisplayCategory(displayCategory){
+  return getFilteredJobs()
+    .filter(job => getDisplayCategory(job) === displayCategory)
+    .sort((a,b) => new Date(b.postedDate || "2000-01-01") - new Date(a.postedDate || "2000-01-01"));
+}
 
-  jobArray.forEach(job => {
-    if(!grouped[job.category]){
-      grouped[job.category] = [];
-    }
-    grouped[job.category].push(job);
+function getCategoryCounts(){
+  const counts = {};
+
+  categoryList.forEach(cat => {
+    counts[cat.key] = getJobsForDisplayCategory(cat.key).length;
   });
 
-  return grouped;
+  return counts;
 }
 
-function getCategoryIcon(categoryName){
-  return categoryIconMap[categoryName] || "template-icon.png";
+function populateCategoryFilter(){
+  categoryList.forEach(cat => {
+    const option = document.createElement("option");
+    option.value = cat.key;
+    option.textContent = cat.key;
+    categoryFilter.appendChild(option);
+  });
 }
 
-function createListingRow(job){
-  const jobMeta = [
+
+function makeJobId(job){
+  return btoa(unescape(encodeURIComponent(`${job.company || ""}-${job.title || ""}-${job.link || ""}`))).replace(/=/g, "");
+}
+
+function isBeginnerFriendly(job){
+  const text = getJobText(job);
+  const terms = [
+    "beginner-friendly", "entry-level", "entry level", "training provided",
+    "paid training", "no experience", "preferred but not required",
+    "6 months", "high school diploma", "ged"
+  ];
+  return terms.some(term => text.includes(term));
+}
+
+function hasEquipmentProvided(job){
+  const text = `${job.equipment || ""} ${job.description || ""}`.toLowerCase();
+  return text.includes("provided") || text.includes("company-issued") || text.includes("laptop provided");
+}
+
+function isNoPhone(job){
+  const text = getJobText(job);
+  return getDisplayCategory(job) === "No Phone Jobs" || text.includes("non-phone") || text.includes("no phone");
+}
+
+function getJobBadges(job){
+  const badges = [];
+
+  if(isBeginnerFriendly(job)) badges.push({ label:"Beginner Friendly", style:"green" });
+  if(isNoPhone(job)) badges.push({ label:"Written Support", style:"pink" });
+  if(hasEquipmentProvided(job)) badges.push({ label:"Equipment Provided", style:"gold" });
+  if(matchesJobType(job, "Flexible Hours")) badges.push({ label:"Flexible", style:"" });
+  if(matchesJobType(job, "Contract")) badges.push({ label:"Contract", style:"" });
+
+  const locationText = getJobLocationText(job).toLowerCase();
+  if(locationText.includes("worldwide") || locationText.includes("global")) badges.push({ label:"Worldwide", style:"" });
+
+  return badges.slice(0, 4);
+}
+
+function getQuickWhy(job){
+  if(isBeginnerFriendly(job)) return "Good starter option if you have customer service, admin, healthcare, or strong communication experience.";
+  if(isNoPhone(job)) return "Great fit if you prefer written support, backend tasks, data entry, or detail-focused work.";
+  if(isHealthcareJob(job)) return "Strong fit for healthcare support, patient support, insurance, pharmacy, or care coordination backgrounds.";
+  if(getDisplayCategory(job) === "Customer Success & Account Mgmt") return "Good growth path for moving from customer service into higher-level client support.";
+  return "Review this role if the schedule, pay, and requirements match your background.";
+}
+
+function createJobCard(job){
+  const jobId = makeJobId(job);
+  const isSaved = savedJobs.includes(jobId);
+  const badges = getJobBadges(job);
+
+  const metaParts = [
     job.location ? escapeHTML(job.location) : "",
     job.type ? escapeHTML(job.type) : "",
     job.pay ? escapeHTML(job.pay) : "",
     `Posted: ${formatDate(job.postedDate)}`
-  ].filter(Boolean).join(" • ");
+  ].filter(Boolean);
+
+  const badgeHTML = badges.length
+    ? `<div class="badge-row">${badges.map(badge => `<span class="job-badge ${badge.style}">${escapeHTML(badge.label)}</span>`).join("")}</div>`
+    : "";
 
   return `
-    <div class="listing-row">
-      <div class="job-title">${escapeHTML(job.title)}</div>
+    <article class="job-card" data-job-id="${escapeHTML(jobId)}">
+      <button class="bookmark ${isSaved ? "is-saved" : ""}" type="button" aria-label="Save job">${isSaved ? "Saved" : "Save"}</button>
+      <h3 class="job-title">${escapeHTML(job.title)}</h3>
       <div class="company-name">${escapeHTML(job.company)}</div>
-      <div class="listing-meta">${jobMeta}</div>
+      ${badgeHTML}
+      <div class="listing-meta">${metaParts.join(" <span style='color:#EC4F86;font-weight:900;'>•</span> ")}</div>
+      <div class="quick-why">${escapeHTML(getQuickWhy(job))}</div>
 
       <div class="job-actions">
-        <a class="apply-btn" href="${escapeHTML(job.link)}" target="_blank" rel="noopener noreferrer">
-          Apply Here
-        </a>
-
-        ${job.description ? `
-          <button class="job-toggle-btn" type="button">View Details</button>
-        ` : ""}
+        <a class="apply-btn" href="${escapeHTML(job.link || "#")}" target="_blank" rel="noopener noreferrer">Apply Now</a>
+        ${job.description ? `<button class="job-toggle-btn" type="button">View Details</button>` : ""}
       </div>
 
-      ${job.description ? `
-        <div class="job-details">
-          ${escapeHTML(job.description)}
-        </div>
-      ` : ""}
-    </div>
+      ${job.description ? `<div class="job-details">${escapeHTML(job.description)}</div>` : ""}
+    </article>
   `;
 }
 
-function renderCategoryJobs(){
-  const openJobs = getFilteredJobs();
+function renderCategoryCards(){
+  const counts = getCategoryCounts();
 
-  if(openJobs.length === 0){
-    categoryGroupsContainer.innerHTML = `
-      <div class="empty-message">
-        No jobs match your filters right now.
+  categoryCardsContainer.innerHTML = categoryList.map(cat => `
+    <article class="category-card" data-category="${escapeHTML(cat.key)}">
+      <span class="category-arrow">›</span>
+      <img src="images/${cat.icon}" class="category-icon-img" alt="">
+      <h3>${escapeHTML(cat.key)}</h3>
+      <p>${counts[cat.key]} open listing${counts[cat.key] !== 1 ? "s" : ""}</p>
+      <button class="view-listings-btn" type="button">
+        View Listings →
+      </button>
+    </article>
+  `).join("");
+}
+
+function renderActivePanel(){
+  const config = getCategoryConfig(activeCategory);
+  const allCategoryJobs = getJobsForDisplayCategory(activeCategory);
+  const jobsToShow = allCategoryJobs.slice(0, visibleCount);
+
+  if(allCategoryJobs.length === 0){
+    activeJobsPanel.innerHTML = `
+      <div class="panel-head">
+        <div class="panel-title-wrap">
+          <img src="images/${config.icon}" class="panel-icon" alt="">
+          <h2>Now Showing: ${escapeHTML(activeCategory)}</h2>
+          <span class="pill">0 Open Listings</span>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="empty-message">No jobs match your filters right now.</div>
       </div>
     `;
     return;
   }
 
-  const groupedCategories = groupJobsByCategory(openJobs);
+  activeJobsPanel.innerHTML = `
+    <div class="panel-head">
+      <div class="panel-title-wrap">
+        <img src="images/${config.icon}" class="panel-icon" alt="">
+        <h2>Now Showing: ${escapeHTML(activeCategory)}</h2>
+        <span class="pill">${allCategoryJobs.length} Open Listings</span>
+      </div>
+      <button class="hide-btn" type="button">Hide Listings ^</button>
+    </div>
 
-  const cards = Object.entries(groupedCategories)
-    .map(([categoryName, listings], index) => {
-      const sortedListings = [...listings].sort((a,b) => new Date(b.postedDate) - new Date(a.postedDate));
-      const sectionId = `listings-${index}`;
-      const iconFile = getCategoryIcon(categoryName);
+    <div class="panel-body">
+      <p class="saved-jobs-note">Tap the heart to save jobs on this device for later.</p>
+      <div class="toolbar">
+        <div class="sort-wrap">
+          <span>Sort by:</span>
+          <select id="sortFilter">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+          </select>
+        </div>
 
-      return `
-        <article class="category-card">
-          <div class="category-heading">
-            <img src="images/${iconFile}" class="category-icon-img" alt="">
-            <div>
-              <h3>${escapeHTML(categoryName)}</h3>
-              <div class="category-subtitle">
-                ${sortedListings.length} open listing${sortedListings.length !== 1 ? "s" : ""}
-              </div>
-            </div>
-          </div>
+        <div class="view-label">
+          <span>View:</span>
+          <span class="view-icon">▦</span>
+          <span style="font-size:24px;">☰</span>
+        </div>
+      </div>
 
-          <button class="view-listings-btn" type="button" data-target="${sectionId}">
-            <span>View Listings (${sortedListings.length})</span>
-            <span>→</span>
-          </button>
+      <div class="job-grid">
+        ${jobsToShow.map(createJobCard).join("")}
+      </div>
 
-          <div id="${sectionId}" class="toggle-section">
-            <div class="listing-list">
-              ${sortedListings.map(job => createListingRow(job)).join("")}
-            </div>
-          </div>
-        </article>
-      `;
-    }).join("");
+      ${allCategoryJobs.length > visibleCount ? `<button class="load-more" type="button">Load More Jobs ↓</button>` : ""}
+    </div>
+  `;
+}
 
-  categoryGroupsContainer.innerHTML = cards;
+function renderCollapsedCategories(){
+  const counts = getCategoryCounts();
+
+  collapsedCategories.innerHTML = categoryList
+    .filter(cat => cat.key !== activeCategory)
+    .map(cat => `
+      <div class="collapsed-category" data-category="${escapeHTML(cat.key)}">
+        <div class="collapsed-left">
+          <img src="images/${cat.icon}" class="small-icon" alt="">
+          <h3>${escapeHTML(cat.key)}</h3>
+          <span>${counts[cat.key]} open listing${counts[cat.key] !== 1 ? "s" : ""}</span>
+        </div>
+        <span style="font-size:24px;font-weight:800;">›</span>
+      </div>
+    `).join("");
+}
+
+function renderAll(){
+  renderCategoryCards();
+
+  const currentJobs = getJobsForDisplayCategory(activeCategory);
+  if(currentJobs.length === 0){
+    const firstAvailable = categoryList.find(cat => getJobsForDisplayCategory(cat.key).length > 0);
+    if(firstAvailable) activeCategory = firstAvailable.key;
+  }
+
+  renderActivePanel();
+  renderCollapsedCategories();
 }
 
 document.addEventListener("click", function(e){
-  const listingsButton = e.target.closest(".view-listings-btn");
+  const bookmarkButton = e.target.closest(".bookmark");
 
-  if(listingsButton){
-    const targetId = listingsButton.getAttribute("data-target");
-    const section = document.getElementById(targetId);
+  if(bookmarkButton){
+    const card = bookmarkButton.closest(".job-card");
+    const jobId = card ? card.getAttribute("data-job-id") : null;
+    if(!jobId) return;
 
-    if(!section) return;
-
-    section.classList.toggle("show");
-
-    const label = listingsButton.querySelector("span:first-child");
-    const arrow = listingsButton.querySelector("span:last-child");
-
-    if(section.classList.contains("show")){
-      label.textContent = label.textContent.replace("View Listings", "Hide Listings");
-      arrow.textContent = "↑";
+    const index = savedJobs.indexOf(jobId);
+    if(index >= 0){
+      savedJobs.splice(index, 1);
+      bookmarkButton.classList.remove("is-saved");
+      bookmarkButton.textContent = "♡";
     } else {
-      label.textContent = label.textContent.replace("Hide Listings", "View Listings");
-      arrow.textContent = "→";
+      savedJobs.push(jobId);
+      bookmarkButton.classList.add("is-saved");
+      bookmarkButton.textContent = "♥";
     }
 
+    localStorage.setItem("savedRemoteJobs", JSON.stringify(savedJobs));
+    return;
+  }
+
+  const hideButton = e.target.closest(".hide-btn");
+
+  if(hideButton){
+    const panel = document.getElementById("activeJobsPanel");
+    panel.classList.toggle("is-hidden");
+    hideButton.textContent = panel.classList.contains("is-hidden") ? "Show Listings ˅" : "Hide Listings ^";
     return;
   }
 
   const detailButton = e.target.closest(".job-toggle-btn");
 
   if(detailButton){
-    const row = detailButton.closest(".listing-row");
+    const row = detailButton.closest(".job-card");
     const details = row.querySelector(".job-details");
-
     if(!details) return;
 
     details.classList.toggle("show");
     detailButton.textContent = details.classList.contains("show") ? "Hide Details" : "View Details";
+    return;
+  }
+
+  const loadMore = e.target.closest(".load-more");
+
+  if(loadMore){
+    visibleCount += 6;
+    renderActivePanel();
+    return;
+  }
+
+  const categoryButton = e.target.closest("[data-category]");
+
+  if(categoryButton){
+    activeCategory = categoryButton.getAttribute("data-category");
+    visibleCount = 6;
+    categoryFilter.value = "all";
+    renderAll();
+    document.getElementById("activeJobsPanel").scrollIntoView({ behavior:"smooth", block:"start" });
+    return;
   }
 });
 
-populateCategoryFilter();
-renderCategoryJobs();
+categoryFilter.addEventListener("change", function(){
+  activeCategory = categoryFilter.value === "all" ? activeCategory : categoryFilter.value;
+  visibleCount = 6;
+  renderAll();
+});
 
-categoryFilter.addEventListener("change", renderCategoryJobs);
-locationFilter.addEventListener("change", renderCategoryJobs);
-searchFilter.addEventListener("input", renderCategoryJobs);
+locationFilter.addEventListener("change", function(){
+  visibleCount = 6;
+  renderAll();
+});
+
+jobTypeFilter.addEventListener("change", function(){
+  visibleCount = 6;
+  renderAll();
+});
+
+searchFilter.addEventListener("input", function(){
+  visibleCount = 6;
+  renderAll();
+});
+
+populateCategoryFilter();
+renderAll();
 </script>
 
 </body>
 </html>
-
-
-
