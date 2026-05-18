@@ -3,197 +3,439 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Resume Help | Remote Life With Littles</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="ATS-friendly resume help, cover letters, LinkedIn updates, interview prep, and resume templates for remote job seekers.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
 
 <style>
+
 *{
+box-sizing:border-box;
 margin:0;
 padding:0;
-box-sizing:border-box;
+}
+
+:root{
+--navy:#173B72;
+--pink:#EC4F86;
+--pink-soft:#FFF0F6;
+--blue-soft:#E9F0F8;
+--blue-light:#F5F9FF;
+--border:#c9dcf4;
+--border-light:#dfeaf7;
+--muted:#51657e;
 }
 
 body{
 font-family:'Inter',sans-serif;
-background:#F5F7FA;
-color:#173B72;
+background:#FFFFFF;
+color:var(--navy);
+line-height:1.5;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+color:inherit;
+text-decoration:none;
 }
 
 /* HEADER */
+
 header{
-background:#E9F0F8;
-padding:8px 12px;
+background:var(--blue-soft);
+padding:0;
 text-align:center;
-border-bottom:1px solid #dbe3ec;
+line-height:0;
+border-bottom:1px solid rgba(23,59,114,.08);
 }
 
 .header-logo{
 width:90%;
 max-width:1000px;
-height:auto;
-display:block;
 margin:auto;
+display:block;
 }
 
 /* PAGE */
+
 .container{
-max-width:760px;
-margin:40px auto;
-padding:0 20px;
+max-width:1180px;
+margin:0 auto;
+padding:34px 34px 28px;
 }
 
-.card{
-background:#fff;
-border:1px solid #e3ebf4;
-border-radius:22px;
-padding:34px;
-box-shadow:0 10px 28px rgba(74,111,165,.08);
-}
+/* HERO */
 
-/* TOP */
-.icon-wrap{
+.hero-card{
+background:#FFFFFF;
+border:2px solid var(--border);
+border-radius:18px;
+box-shadow:0 8px 20px rgba(23,59,114,0.06);
+padding:34px 28px;
 text-align:center;
-margin-bottom:18px;
+margin-bottom:20px;
+}
+
+.icon-wrap{
+display:flex;
+justify-content:center;
+margin-bottom:16px;
 }
 
 .icon-wrap img{
-width:76px;
-height:76px;
+width:78px;
+height:78px;
 object-fit:contain;
 }
 
 h1{
 font-family:'Patrick Hand',cursive;
-font-size:48px;
-text-align:center;
-margin-bottom:8px;
-line-height:1.05;
+font-size:58px;
+line-height:1;
+margin-bottom:10px;
+color:var(--navy);
 }
 
 .sub{
-text-align:center;
-font-size:18px;
-margin-bottom:24px;
-color:#51657e;
+max-width:780px;
+margin:auto;
+font-size:17px;
+line-height:1.7;
+color:var(--muted);
+font-weight:500;
 }
 
-/* BENEFITS */
-.benefits{
+/* SERVICE SECTION */
+
+.service-grid{
 display:grid;
-gap:12px;
-margin-bottom:26px;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
+margin-bottom:20px;
 }
 
-.benefits div{
-background:#F7FAFD;
-border:1px solid #e7eef7;
-padding:14px 16px;
-border-radius:14px;
-font-size:16px;
-}
-
-/* PRICE BOX */
-.price-box{
-background:#F8FBFF;
-border:1px solid #d8e5f5;
-border-radius:18px;
+.service-card{
+background:#FFFFFF;
+border:2px solid var(--border);
+border-radius:16px;
 padding:24px;
-text-align:center;
-margin-bottom:22px;
+box-shadow:0 8px 20px rgba(23,59,114,.06);
+position:relative;
+overflow:hidden;
+transition:.2s ease;
 }
 
-.price-title{
-font-weight:700;
-font-size:20px;
-margin-bottom:6px;
+.service-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:5px;
+background:linear-gradient(
+90deg,
+var(--pink),
+#ffd1df,
+var(--blue-soft)
+);
 }
 
-.price{
+.service-card:hover{
+transform:translateY(-3px);
+border-color:#ffd1df;
+box-shadow:0 14px 28px rgba(23,59,114,.10);
+}
+
+.service-title{
+font-size:23px;
+font-weight:800;
+line-height:1.25;
+margin:8px 0 10px;
+color:var(--navy);
+}
+
+.service-price{
 font-size:42px;
-font-weight:700;
+font-weight:800;
+line-height:1;
+margin-bottom:14px;
+color:var(--navy);
+}
+
+.service-desc{
+font-size:15px;
+line-height:1.7;
+color:var(--muted);
+font-weight:500;
+min-height:78px;
 margin-bottom:18px;
 }
 
+/* BUTTONS */
+
 .buy-btn{
-display:block;
+display:flex;
+align-items:center;
+justify-content:center;
 width:100%;
-background:#4A6FA5;
-color:#fff;
-text-decoration:none;
-padding:16px;
-border-radius:14px;
-font-weight:700;
-font-size:18px;
+background:var(--pink);
+color:#FFFFFF !important;
+padding:15px 18px;
+border-radius:10px;
+font-weight:800;
+font-size:16px;
+border:1px solid var(--pink);
 transition:.2s ease;
 }
 
 .buy-btn:hover{
-background:#3f6295;
+filter:brightness(.96);
+transform:translateY(-1px);
 }
-.upload-btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-background:#7FB069;
-color:#FFFFFF !important;
-text-decoration:none;
-padding:14px 24px;
-border-radius:12px;
-font-weight:700;
-font-size:17px;
-margin-top:14px;
-border:1px solid #6da75b;
+
+/* TEMPLATE SECTION */
+
+.template-box{
+background:linear-gradient(
+90deg,
+#FFFFFF 0%,
+#FFF7FB 100%
+);
+border:2px solid var(--border);
+border-radius:18px;
+box-shadow:0 8px 20px rgba(23,59,114,.06);
+padding:30px;
+margin-bottom:20px;
+}
+
+.template-box h2{
+font-family:'Patrick Hand',cursive;
+font-size:50px;
+line-height:1;
+text-align:center;
+margin-bottom:10px;
+color:var(--navy);
+}
+
+.template-sub{
+max-width:720px;
+margin:0 auto 28px;
+text-align:center;
+font-size:16px;
+line-height:1.7;
+color:var(--muted);
+font-weight:500;
+}
+
+/* TEMPLATE GRID */
+
+.template-preview-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.template-preview-card{
+background:#FFFFFF;
+border:2px solid var(--border-light);
+border-radius:16px;
+padding:22px;
+text-align:center;
+box-shadow:0 5px 12px rgba(23,59,114,.035);
 transition:.2s ease;
 }
 
-.upload-btn:hover{
-background:#6da75b;
-color:#FFFFFF !important;
-text-decoration:none;
-transform:translateY(-1px);
-}
-/* INFO */
-.info{
-text-align:center;
-font-size:15px;
-line-height:1.7;
-color:#51657e;
-margin-top:14px;
+.template-preview-card:hover{
+transform:translateY(-3px);
+border-color:#ffd1df;
+box-shadow:0 14px 28px rgba(23,59,114,.10);
 }
 
-.info strong{
-color:#173B72;
+.template-icon{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-bottom:14px;
+}
+
+.template-icon img{
+width:58px;
+height:58px;
+object-fit:contain;
+}
+
+.template-preview-card h3{
+font-size:20px;
+font-weight:800;
+line-height:1.25;
+margin-bottom:10px;
+color:var(--navy);
+}
+
+.template-preview-card p{
+font-size:14px;
+line-height:1.7;
+color:var(--muted);
+font-weight:500;
+margin-bottom:18px;
+min-height:94px;
+}
+
+/* TEMPLATE BUTTON */
+
+.template-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+background:var(--pink);
+color:#FFFFFF !important;
+padding:13px 14px;
+border-radius:10px;
+font-weight:800;
+font-size:15px;
+border:1px solid var(--pink);
+transition:.2s ease;
+}
+
+.template-btn:hover{
+filter:brightness(.96);
+transform:translateY(-1px);
+}
+
+/* NOTE */
+
+.note{
+background:#FFFFFF;
+border:2px solid var(--border-light);
+border-radius:14px;
+padding:18px 22px;
+text-align:center;
+font-size:14px;
+line-height:1.8;
+color:var(--muted);
+font-weight:600;
+box-shadow:0 5px 12px rgba(23,59,114,.035);
 }
 
 .back-link{
 display:block;
 text-align:center;
-margin-top:22px;
-text-decoration:none;
-color:#4A6FA5;
-font-weight:700;
+margin-top:24px;
+font-weight:800;
+color:var(--pink);
 }
 
-@media (max-width:700px){
+/* FOOTER */
+
+footer{
+background:var(--blue-soft);
+padding:10px 20px;
+border-top:1px solid rgba(23,59,114,.08);
+margin-top:40px;
+}
+
+.footer-wrap{
+max-width:760px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:160px;
+}
+
+.footer-banner{
+width:260px;
+height:auto;
+}
+
+.copyright{
+font-size:13px;
+color:var(--navy);
+white-space:nowrap;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.template-preview-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.footer-wrap{
+gap:60px;
+}
+
+}
+
+@media(max-width:800px){
 
 .container{
-margin:24px auto;
+padding:18px 14px 24px;
 }
 
-.card{
-padding:24px;
+.hero-card{
+padding:26px 18px;
 }
 
 h1{
+font-size:44px;
+}
+
+.sub{
+font-size:15px;
+}
+
+.service-title{
+font-size:21px;
+}
+
+.service-price{
 font-size:38px;
 }
 
-.price{
-font-size:36px;
+.template-preview-grid{
+grid-template-columns:1fr;
+}
+
+.service-desc,
+.template-preview-card p{
+min-height:auto;
+}
+
+.template-box{
+padding:24px 18px;
+}
+
+.template-box h2{
+font-size:42px;
+}
+
+.footer-wrap{
+flex-direction:column;
+gap:8px;
+}
+
+.footer-banner{
+width:240px;
 }
 
 }
+
 </style>
 </head>
 
@@ -203,61 +445,183 @@ font-size:36px;
 <img src="images/header-logo.png" class="header-logo" alt="Remote Life With Littles">
 </header>
 
-<div class="container">
+<main class="container">
 
-<div class="card">
+<section class="hero-card">
 
 <div class="icon-wrap">
 <img src="images/resume-icon.png" alt="Resume Help">
 </div>
 
-<h1>Resume Revamp Service</h1>
+<h1>Resume Services</h1>
 
 <p class="sub">
-Need more interviews? Let’s strengthen your resume for remote jobs.
+Helping remote job seekers create stronger resumes, improve LinkedIn profiles, and feel more confident applying to remote jobs.
 </p>
 
-<p class="sub" style="margin-top:-10px; margin-bottom:24px;">
-I’ll personally improve your resume to help it look cleaner, stronger, and more competitive for today’s hiring market.
-</p>
+</section>
 
-<div class="benefits">
-<div>✔ ATS-friendly formatting recruiters can read easily</div>
-<div>✔ Stronger wording + keyword improvements</div>
-<div>✔ Better layout + cleaner first impression</div>
-<div>✔ Personalized updates for remote job seekers</div>
-<div>✔ Great for customer service, admin, and remote support roles</div>
+<section class="service-grid">
+
+<div class="service-card">
+<div class="service-title">Resume Revamp</div>
+<div class="service-price">$20</div>
+<div class="service-desc">
+ATS-friendly resume updates tailored to remote jobs.
 </div>
-
-<div class="price-box">
-<div class="price-title">Resume Revamp</div>
-<div class="price">$5</div>
-
-<a href="https://www.paypal.com/ncp/payment/JS7XR3NHTTSSS" class="buy-btn" target="_blank">
-Get Resume Help →
+<a href="resume-revamp-payment.html" class="buy-btn">
+Get Resume Help
 </a>
 </div>
 
-<div class="info">
-  <p>
-    After payment, upload your current resume using the secure form below.
-  </p>
-
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVhGYzgjic7mvda_JnHib6pgkLTuSPpX1ygF-J9QdDxVoizw/viewform?usp=publish-editor"
-     class="upload-btn"
-     target="_blank">
-    Upload Resume Securely →
-  </a>
-
-  <p style="margin-top:18px;">
-    You’ll receive your updated resume within 24 hours.
-  </p>
+<div class="service-card">
+<div class="service-title">Resume + Cover Letter Help</div>
+<div class="service-price">$25</div>
+<div class="service-desc">
+ATS-friendly resume updates plus a customizable remote-job cover letter designed to help you apply with more confidence.
+</div>
+<a href="resume-cover-letter-payment.html" class="buy-btn">
+Get Resume Help
+</a>
 </div>
 
-<a href="index.html" class="back-link">← Back to Job Board</a>
+<div class="service-card">
+<div class="service-title">Resume + Cover Letter + LinkedIn</div>
+<div class="service-price">$30</div>
+<div class="service-desc">
+Complete starter package for applying to remote jobs with a stronger resume, cover letter, and LinkedIn profile.
+</div>
+<a href="resume-cover-letter-linkedin-payment.html" class="buy-btn">
+Get Resume Help
+</a>
+</div>
+
+<div class="service-card">
+<div class="service-title">Full Job Prep Package</div>
+<div class="service-price">$50</div>
+<div class="service-desc">
+Resume revamp, cover letter, LinkedIn optimization, plus interview guidance and support.
+</div>
+<a href="full-job-prep-payment.html" class="buy-btn">
+Get Resume Help
+</a>
+</div>
+
+</section>
+
+<section class="template-box">
+
+<h2>Resume Templates</h2>
+
+<div class="template-sub">
+Choose a resume template based on the type of remote job you want. Each one is clean, ATS-friendly, and made to help you customize your resume faster.
+</div>
+
+<div class="template-preview-grid">
+
+<div class="template-preview-card">
+<div class="template-icon">
+<img src="images/resume-icon.png" alt="Customer Service">
+</div>
+<h3>Customer Service</h3>
+<p>
+Perfect for customer support, phone, chat, and email support jobs.
+</p>
+<a href="resume-templates.html" class="template-btn">
+Get Template
+</a>
+</div>
+
+<div class="template-preview-card">
+<div class="template-icon">
+<img src="images/laptop-icon.png" alt="No Phone Jobs">
+</div>
+<h3>No Phone Jobs</h3>
+<p>
+Built for chat support, data entry, backend work, and email roles.
+</p>
+<a href="resume-templates.html" class="template-btn">
+Get Template
+</a>
+</div>
+
+<div class="template-preview-card">
+<div class="template-icon">
+<img src="images/health-support.png" alt="Healthcare Support">
+</div>
+<h3>Healthcare Support</h3>
+<p>
+Patient support, scheduling, care coordination, and medical admin roles.
+</p>
+<a href="resume-templates.html" class="template-btn">
+Get Template
+</a>
+</div>
+
+<div class="template-preview-card">
+<div class="template-icon">
+<img src="images/support-icon.png" alt="Tech & Admin">
+</div>
+<h3>Tech & Admin</h3>
+<p>
+Operations, systems, scheduling, troubleshooting, and admin support jobs.
+</p>
+<a href="resume-templates.html" class="template-btn">
+Get Template
+</a>
+</div>
+
+<div class="template-preview-card">
+<div class="template-icon">
+<img src="images/success-icon.png" alt="Customer Success">
+</div>
+<h3>Customer Success</h3>
+<p>
+Customer success, account management, onboarding, and client support.
+</p>
+<a href="resume-templates.html" class="template-btn">
+Get Template
+</a>
+</div>
+
+<div class="template-preview-card">
+<div class="template-icon">
+<img src="images/education-icon.png" alt="Education & Content">
+</div>
+<h3>Education & Content</h3>
+<p>
+Curriculum, education support, writing, editing, and content-focused roles.
+</p>
+<a href="resume-templates.html" class="template-btn">
+Get Template
+</a>
+</div>
 
 </div>
+
+</section>
+
+<div class="note">
+Please note: I do not guarantee interviews or job placement. I help improve resumes and make job searching easier for remote job seekers.
 </div>
+
+<a href="index.html" class="back-link">
+Back to Job Board
+</a>
+
+</main>
+
+<footer>
+<div class="footer-wrap">
+
+<img src="images/footer-banner.png" class="footer-banner" alt="Made for parents chasing flexibility and freedom">
+
+<p class="copyright">
+© 2026 Remote Life With Littles
+</p>
+
+</div>
+</footer>
 
 </body>
 </html>
