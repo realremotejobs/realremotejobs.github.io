@@ -337,6 +337,8 @@ color:var(--pink);
 
 /* FOOTER */
 
+/* FOOTER */
+
 footer{
 background:var(--blue-soft);
 padding:10px 20px;
@@ -358,6 +360,30 @@ width:260px;
 height:auto;
 }
 
+.copyright{
+font-size:13px;
+color:var(--navy);
+white-space:nowrap;
+}
+
+@media(max-width:950px){
+
+.footer-wrap{
+gap:60px;
+}
+
+}
+
+@media(max-width:800px){
+
+.footer-wrap{
+flex-direction:column;
+gap:8px;
+}
+
+.footer-banner{
+width:240px;
+}
 .copyright{
 font-size:13px;
 color:var(--navy);
@@ -612,15 +638,17 @@ Back to Job Board
 </main>
 
 <footer>
-<div class="footer-wrap">
+  <div class="footer-wrap">
 
-<img src="images/footer-banner.png" class="footer-banner" alt="Made for parents chasing flexibility and freedom">
+    <img src="images/footer-banner.png"
+    class="footer-banner"
+    alt="Made for parents chasing flexibility and freedom">
 
-<p class="copyright">
-© 2026 Remote Life With Littles
-</p>
+    <p class="copyright">
+      © 2026 Remote Life With Littles
+    </p>
 
-</div>
+  </div>
 </footer>
 
 </body>
