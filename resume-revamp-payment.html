@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Resume Revamp Payment | Remote Life With Littles</title>
+  <meta name="description" content="Pay for Resume Revamp service from Remote Life With Littles and upload your resume and payment receipt." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #173B72;
+      --soft-blue: #E9F0F8;
+      --light-blue: #F5F8FC;
+      --border: #dfeaf7;
+      --pink: #EC4899;
+      --pink-dark: #DB2777;
+      --green: #7FB069;
+      --green-dark: #5f914d;
+      --text: #334155;
+      --muted: #64748b;
+      --white: #ffffff;
+      --paypal-yellow: #FFD140;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(236, 72, 153, 0.12), transparent 32%),
+        linear-gradient(180deg, var(--soft-blue), var(--light-blue));
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 22px;
+    }
+
+    .popup-card {
+      width: min(470px, 100%);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 18px 45px rgba(23, 59, 114, 0.14);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 8px 0 8px;
+      color: var(--navy);
+      font-size: 1.5rem;
+      line-height: 1.25;
+    }
+
+    .subtitle {
+      margin: 0 auto 16px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.5;
+    }
+
+    .price {
+      display: inline-block;
+      margin: 4px 0 18px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: #fff1f7;
+      color: var(--pink-dark);
+      border: 1px solid #f9c7dd;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .includes {
+      text-align: left;
+      background: #f8fbff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin: 0 0 18px;
+    }
+
+    .includes h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 1rem;
+    }
+
+    .includes ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .includes li {
+      margin-bottom: 7px;
+      font-size: 0.93rem;
+      line-height: 1.45;
+    }
+
+    .pay-text {
+      margin: 0 0 12px;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .paypal-wrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 6px;
+    }
+
+    .paypal-button-custom {
+      text-align: center;
+      border: none;
+      border-radius: 0.45rem;
+      min-width: 12rem;
+      padding: 0 2rem;
+      height: 2.75rem;
+      font-weight: bold;
+      background-color: var(--paypal-yellow);
+      color: #000000;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      cursor: pointer;
+    }
+
+    .upload-link {
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+      padding: 13px 16px;
+      border-radius: 14px;
+      background: var(--green);
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.94rem;
+      transition: 0.2s ease;
+    }
+
+    .upload-link:hover {
+      background: var(--green-dark);
+      transform: translateY(-1px);
+    }
+
+    .small-note {
+      margin: 14px auto 0;
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .disclaimer {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: #fff7fb;
+      border: 1px solid #f9c7dd;
+      border-radius: 14px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.45;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 18px;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.92rem;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 14px;
+        align-items: flex-start;
+      }
+
+      .popup-card {
+        margin-top: 14px;
+        padding: 22px 16px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      .subtitle,
+      .pay-text {
+        font-size: 0.92rem;
+      }
+
+      .includes {
+        padding: 14px;
+      }
+
+      .includes li {
+        font-size: 0.9rem;
+      }
+
+      .paypal-button-custom {
+        width: 100%;
+        min-width: 0;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      form img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="popup-card">
+
+    <h1>Resume Revamp</h1>
+
+    <p class="subtitle">
+      ATS-friendly resume updates tailored to remote jobs.
+    </p>
+
+    <div class="price">$20</div>
+
+    <section class="includes">
+      <h2>What’s Included:</h2>
+      <ul>
+        <li>Cleaner resume layout and formatting</li>
+        <li>ATS-friendly wording and keyword improvements</li>
+        <li>Stronger bullet points for remote job applications</li>
+        <li>Resume updates tailored toward customer service, admin, support, or remote roles</li>
+      </ul>
+    </section>
+
+    <p class="pay-text">Complete your payment securely through PayPal.</p>
+
+    <div class="paypal-wrap">
+      <form action="https://www.paypal.com/ncp/payment/MQJXH3WUWQQFE" method="post" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+        <input class="paypal-button-custom" type="submit" value="Buy Now" />
+        <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Debit and credit cards" />
+        <section style="font-size: 0.75rem;">
+          Powered by
+          <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="PayPal" style="height:0.875rem;vertical-align:middle;" />
+        </section>
+      </form>
+    </div>
+
+    <p class="small-note">
+      After payment, PayPal should redirect you to the upload form.
+    </p>
+
+    <a href="upload-resume.html" class="upload-link">
+      Already paid? Upload resume + receipt
+    </a>
+
+    <div class="disclaimer">
+      Please note: I do not guarantee interviews or job placement. I help improve resumes and make job searching easier.
+    </div>
+
+    <a href="resume-help.html" class="back-link">
+      ← Back to Resume Help
+    </a>
+
+  </main>
+
+</body>
+</html>
